@@ -1,0 +1,205 @@
+;=======================================
+[Info]
+name = "Cell Arena"
+Autor = "LordlEe"
+Web = "http://mugentriforce.shorturl.com"
+Foro = "http://mugen-elysium.activoforo.com"
+;=======================================
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -180
+boundright = 180
+
+boundhigh = -100
+boundlow = 0
+
+verticalfollow = .8
+tension = 50
+floortension = 0
+
+;=======================================
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;=======================================
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;=======================================
+[Bound]
+screenleft = 15
+screenright = 15
+
+;=======================================
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;=======================================
+[Shadow]
+color = 80,80,80
+yscale = 0.2
+reflect = 0
+intensity = 64
+fade.range = -365,-35
+
+[Reflection]
+intensity = 0
+
+;=======================================
+[Music]
+bgmusic = sound/Cell-Arena.mp3
+bgvolume = 255
+
+;=======================================
+[BGdef]
+spr = stages/Cell-Arena.sff
+debugbg = 0
+
+;=======================================
+[BG Fondo]
+type        = normal
+spriteno    = 0,7
+layerno     = 0
+start       = 0,0
+trans       = none
+mask        = 0
+tile        = 1,1
+
+[BG Nubes]
+type        = normal
+spriteno    = 0,11
+layerno     = 0
+start       = 0,20
+delta       = .5422321, 1
+trans       = none
+mask        = 1
+tile        = 1
+tilespacing = 25,0
+
+[BG Nubes 2]
+type        = normal
+spriteno    = 0,10
+layerno     = 0
+start       = 80,-70
+delta       = .5422321, 1
+trans       = none
+mask        = 1
+tile        = 1
+tilespacing = 25,0
+
+[BG Nubes 3]
+type        = normal
+spriteno    = 0,10
+layerno     = 0
+start       = -80,-140
+delta       = .5422321, 1
+trans       = none
+mask        = 1
+tile        = 1
+tilespacing = 25,0
+
+[BG Praderas]
+type        = normal
+spriteno    = 0,5
+layerno     = 0
+start       = 0,80
+delta       = .5422321, 1
+trans       = none
+mask        = 0
+tile        = 1
+
+[BG Montañas Chicas]
+type        = normal
+spriteno    = 0,9
+layerno     = 0
+start       = 0,60
+delta       = .5422321, 1
+trans       = none
+mask        = 1
+tile        = 1
+
+[BG Montañas]
+type        = normal
+spriteno    = 0,4
+layerno     = 0
+start       = 0,28
+delta       = .6422321, 1
+trans       = none
+mask        = 1
+tile        = 1
+
+[BG Suelo]
+type        = normal
+spriteno    = 0,3
+layerno     = 0
+start       = 0,80
+trans       = none
+mask        = 1
+
+[BG Rock]
+type        = normal
+spriteno    = 0,6
+layerno     = 0
+start       = 162,74
+delta       = 1, 1
+trans       = none
+mask        = 1
+
+[BG Plataforma]
+type        = parallax
+spriteno    = 0,0
+start       = 0,156
+delta       = 1, 1
+xscale      = 1, 1.732258 ;1.532258
+mask        = 0
+
+[BG Roca]
+type        = normal
+spriteno    = 0,2
+layerno     = 1
+start       = -452,171
+delta       = 1.5, 1
+trans       = none
+mask        = 1
+
+[BG Roca 3]
+type        = normal
+spriteno    = 0,2
+layerno     = 1
+start       = 370,175
+delta       = 1.5, 1
+trans       = none
+mask        = 1
+
+[BG Roca 2]
+type        = normal
+spriteno    = 0,2
+layerno     = 1
+start       = 342,170
+delta       = 1.5, 1
+trans       = none
+mask        = 1
+;=======================================

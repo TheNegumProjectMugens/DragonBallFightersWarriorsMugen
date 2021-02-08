@@ -1,0 +1,284 @@
+;--------------------------------------------------------
+;---DBZ_PROJECT--
+; By Blackscale299
+;--------------------------------------------------------
+[Info]
+name = "Wasteland"
+displayname = "Wasteland"
+mugenversion = 1.1
+author = "Blackscale299"
+;====================
+[Camera]
+startx = 0
+starty = 0
+boundleft = -2000
+boundright = 2000
+boundhigh = -140
+boundlow = 0
+verticalfollow = 3
+floortension = 0
+tension = 110
+;cutlow = 40
+tensionhigh = 160
+tensionlow = 60
+overdrawhigh =100
+overdrawlow = 100
+zoomin = .9
+zoomout = .48
+
+[PlayerInfo]
+p1startx =  -70 
+p1starty = 0   
+p1startz = 0   
+p1facing = 1   
+p2startx =  70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -3100 
+rightbound =  7000 
+topbound  =  0  
+botbound  =  100  
+[Scaling]
+topz     = 0   
+botz     = 100  
+topscale = 1   
+botscale = 2 
+[Bound]
+screenleft = 25   
+screenright = 25
+[StageInfo]
+zoffset = 190
+autoturn = 1
+resetBG = 1
+hires = 1
+localcoord=355,199
+
+[Shadow]
+intensity = 70
+color = 0,0,0
+yscale = .1
+fade.range = 0,0
+[Reflection]
+intensity = 0
+;====================
+[Music]
+bgmusic = sound/Challengers.mp3
+bgmvolume = 255
+;====================
+[BGdef]
+spr = Wasteland.sff
+debugbg = 0
+;====================
+
+
+[BG Sky]
+type  = parallax
+spriteno = 0, 0
+start = -108, 250
+delta = 0.3, 3.5
+mask = 1
+velocity = 0.2, 0
+tile = 1, 0
+width = 1700, 1000
+yscalestart = 80
+yscaledelta = .18
+scalestart = 1,1.3
+
+[BG Airship RR]
+type  = normal
+spriteno = 0, 6
+start = 433, 119
+delta = 0.325, 3.9
+mask = 1
+velocity = -0.1, 0
+tile = 1, 0
+tilespacing = 22550, 0
+scalestart = .5,.5
+
+[BG Clouds2]
+type  = normal
+spriteno = 0, 4
+start = 360, 131
+delta = 0.35, 3.8
+mask = 1
+velocity = 0.05, 0
+tile = 1, 0
+tilespacing = 450, 0
+scalestart = .5,.5
+
+[BG Clouds1]
+type  = normal
+spriteno = 0, 3
+start = -31, 140
+delta = 0.35, 3.9
+mask = 1
+velocity = -0.15, 0
+tile = 1, 0
+tilespacing = 550, 0
+scalestart = .5,.5
+[BG Clouds2]
+type  = normal
+spriteno = 0, 4
+start = 60, 181
+delta = 0.35, 3.8
+mask = 1
+velocity = -0.05, 0
+tile = 1, 0
+tilespacing = 750, 0
+scalestart = .5,.5
+[BG Clouds3]
+type  = normal
+spriteno = 0, 5
+start = 100, 171
+delta = 0.35, 3.8
+mask = 1
+velocity = -0.025, 0
+tile = 1, 0
+tilespacing = 350, 0
+scalestart = .5,.5
+
+[BG Clouds1]
+type  = normal
+spriteno = 0, 3
+start = -231, 200
+delta = 0.35, 3.9
+mask = 1
+velocity = 0.15, 0
+tile = 1, 0
+tilespacing = 750, 0
+scalestart = .5,.5
+
+[BG Clouds3]
+type  = normal
+spriteno = 0, 5
+start = 200, 200
+delta = 0.35, 3.8
+mask = 1
+velocity = 0.025, 0
+tile = 1, 0
+tilespacing = 950, 0
+scalestart = .5,.5
+
+[BG Ground2]
+type  = parallax
+spriteno = 0, 2
+start = 3, 280
+delta = 0.4, 3
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+width = 200, 700
+yscalestart = 100
+yscaledelta =-1.5
+scalestart = 1,.98
+
+[BG Mountains]
+type  = normal
+spriteno = 1, 0
+start = -43, 236
+delta = 0.4, 3.38
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+tilespacing = -30,0
+scalestart = .5,.5
+
+[BG Mountain4]
+type  = normal
+spriteno = 2, 4
+start = 538, 251
+delta = .65, 3.2
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+tilespacing = 550, 0
+scalestart = 1,1
+
+[BG Mountain3]
+type  = normal
+spriteno = 2, 2
+start = -619, 263
+delta = .8, 3.15
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+tilespacing = 400, 0
+scalestart = 1,1
+
+[BG Tree]
+type  = normal
+spriteno = 2, 3
+start = 565, 285
+delta = 1, 2.95
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+tilespacing = 650, 0
+scalestart = 1,1
+
+[BG Mountain2]
+type  = normal
+spriteno = 2, 1
+start = 270, 308
+delta = 1.15, 2.9
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+tilespacing = 800, 0
+scalestart = 1,1
+
+[BG Ground1]
+type  = parallax
+spriteno = 0, 1
+start = 40, 375
+delta = 1.2, 2
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+width = 700, 1500
+yscalestart = 150
+yscaledelta = -2.5
+
+[BG Mountain1]
+type  = normal
+spriteno = 2, 0
+start = -173, 335
+delta = 1.2, 2.65
+mask = 1
+velocity = 0, 0
+tile = 1, 0
+tilespacing = 1050, 0
+scalestart = 1,1
+
+[BG Rocks Left]
+type  = normal
+spriteno = 1, 1
+start = -5300, 335
+delta = 2.4, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+zoomdelta = .7
+layerno=1
+[BG Rocks Right]
+type  = normal
+spriteno = 1, 2
+start = 5300, 423
+delta = 2.4, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+zoomdelta = .7
+layerno=1
+
+[BG Shine]
+type  = normal
+spriteno = 0, 7
+start = 0, 0
+mask = 1
+tile = 1,1
+layerno = 1
+delta = 1.1, 1.1
+trans = addalpha
+alpha = 100, 256

@@ -1,0 +1,121 @@
+;--------------------------------------------------------
+[Info]
+name = "Tenka Ichi Budokai"
+author = "Ryon"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -115
+boundright = 115
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+floortension = 0
+tension = 60
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+;--------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 0,0,0
+yscale = -.1
+fade.range = -400,-100
+;--------------------------------------------------------
+[Reflection]
+intensity = 98
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/Tenka_Ichi_Budokai.mp3
+bgvolume = 255
+;========================================================
+[BGdef]
+spr = Tenka Ichi Budokai.sff
+debugbg = 1
+
+[BG 0] ; Blue Sky
+type  = parallax
+spriteno = 2, 0
+layerno = 0                
+start = 0, 0
+tile = 1,0
+velocity = .2, 0
+delta = .72, .72
+xscale = 2, 1
+
+[BG 1] ; House
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0, 0
+delta = .75, .75
+mask = 1
+
+[BG 2] ; Ring Floor
+type  = parallax
+spriteno = 1,0
+start = 0, 0
+delta = .75, .75
+xscale = 4, 5
+
+[BG 3] ; Goku
+type  = Normal
+spriteno = 1, 1
+layerno = 0                
+start = 0, 0
+delta = .74, .74
+mask = 1
+
+[BG 3] ; Picollo
+type  = Normal
+spriteno = 1, 2
+layerno = 0                
+start = 0, 0
+delta = .74, .74
+mask = 1
+
+[BG 3] ; Gohan
+type  = Normal
+spriteno = 1, 3
+layerno = 0                
+start = 0, 0
+delta = .74, .74
+mask = 1
+
+[BG 3] ; Vegeta
+type  = Normal
+spriteno = 1, 4
+layerno = 0                
+start = 0, 0
+delta = .74, .74
+mask = 1

@@ -1,0 +1,140 @@
+;Rocks - From Dragon Ball Z Super Butoden
+; 09/06/05 Made by Ze Sensei with the help of Dark Saviour
+
+[Info]
+name = "Rocks"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -863
+boundright = 863
+boundhigh = -244
+boundlow = 0
+verticalfollow = 2.5
+floortension = 100
+tension = 120
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -2000
+rightbound =  2000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+[StageInfo]
+zoffset   = 210
+autoturn  = 1
+
+[Shadow]
+color = 16,16,16
+yscale = -0.2
+
+
+[Music]
+bgmusic = stages/rocks.mp3
+
+[BGdef]
+spr = rocks.sff
+
+[BG 0] ; Empty sky
+type = normal
+spriteno = 1,0
+start = -863, -68
+delta = 0.74
+tile = 1
+
+[BG 01] ; Hidden Clouds
+type = normal
+spriteno = 1,1
+start = -873, -40
+delta = 0.9
+tile = 1
+tilespacing = 40
+mask = 1
+
+[BG 1] ; Floor front
+type  = normal
+spriteno = 0, 0
+start = -785, 240
+tile = 1
+
+[BG 2] ; Floor Middle
+type  = normal
+spriteno = 0, 1
+start = -848, 186	
+tile  = 1
+delta = 0.87
+
+[BG 3] ; Floor Back
+type = normal
+spriteno = 0, 2
+start = -945, 154
+tile = 1
+delta = 0.74
+mask = 1
+
+[BG 4] ; Sky plan1
+type = normal
+spriteno = 1,2
+start = -1071,-68
+tile = 1
+delta = 1.52
+
+[BG 5] ; Sky plan2
+type = normal
+spriteno = 1,3
+start = -566,-68
+tile = 1
+
+[BG 6] ; Sky plan3
+type = normal
+spriteno = 1,4
+start = -1484,-100
+tile = 1
+delta = 0.48
+
+[BG 7] ; Sky plan4
+type = normal
+spriteno = 1,5
+start = -810,-116
+tile = 1
+delta = 1.52
+
+[BG 8] ; Sky plan5
+type = normal
+spriteno = 1,6
+start = -1211,-156
+tile = 1
+delta = 0.48
+
+[BG 9] ; sky plan6
+type = normal
+spriteno = 1,7
+start = -613,-172
+tile = 1
+delta = 1
+
+[BG 10] ; sky plan7
+type = normal
+spriteno = 1,8
+start = -735,-204
+tile = 1
+delta = 1.52

@@ -1,0 +1,237 @@
+
+[Info]
+name = "Sacred Grounds"
+author = "AVPboy6754"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -350
+boundright = 350
+boundhigh = -325
+boundlow = 0
+verticalfollow = .85
+tension = 50
+floortension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 15,15,15
+yscale = .12
+reflect = 0
+
+[Music]
+bgmusic = sound/dbsacred.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/dbsacred.sff
+debugbg = 0
+
+
+[bg Sky]
+type = normal
+spriteno = 0,0
+start = 0, 0
+delta = .14,.74
+mask = 1
+layerno = 0
+tile = 1,0
+
+[bg Stars]
+type = normal
+spriteno = 0,2
+start = 0, -20
+delta = .12,.63
+mask = 1
+layerno = 0
+tile = 1,0
+
+[bg Stars]
+type = normal
+spriteno = 0,3
+start = 0, -20
+delta = .06,.67
+trans = addalpha
+alpha = 90,180
+mask = 1
+layerno = 0
+tile = 1,0
+
+[BG Stars]
+type = anim
+actionno = 1
+start = 0, -20
+delta = .06,.67
+trans = addalpha
+alpha = 90,180
+mask = 1
+layerno = 0
+tile = 1,0
+
+[Begin action 1]
+
+0,3, 0,0, 3
+-1,0, 0,0, 2
+
+[bg Stars]
+type = normal
+spriteno = 3,0
+start = 0, -20
+delta = .15,.69
+mask = 1
+layerno = 0
+tile = 1,0
+
+[bg KI 1]
+type = normal
+spriteno = 1,0
+start = 0, 0
+delta = .73,.94
+velocity = 0,-.8
+mask = 1
+layerno = 0
+sin.x = 3, 130
+trans = addalpha 
+alpha = 90,180
+tile = 0,1
+tilespacing = 120,150
+
+[bg KI 2]
+type = normal
+spriteno = 1,1
+start = 0, 0
+delta = .76,.94
+velocity = 0,-.9
+mask = 1
+layerno = 0
+sin.x = 3, 230
+trans = add
+tile = 1,1
+tilespacing = 100,130
+
+[bg KI 3]
+type = normal
+spriteno = 1,2
+start = -100, 0
+delta = .9,.94
+velocity = .2,-1.35
+mask = 1
+layerno = 1
+sin.x = 3, 230
+trans = add
+tile = 1,1
+tilespacing = 220,180
+
+[bg KI 4]
+type = normal
+spriteno = 1,0
+start = -139, 0
+delta = .93,.94
+velocity = .34,-1.38
+mask = 1
+layerno = 1
+sin.x = 3, 230
+trans = addalpha
+alpha = 100,170
+tile = 1,1
+tilespacing = 250,150
+
+[bg KI 5]
+type = normal
+spriteno = 1,0
+start = 0, 0
+delta = .73,.94
+velocity = 0,-.8
+scalestart = 0.5,0.5
+mask = 1
+layerno = 0
+sin.x = 3, 130
+trans = addalpha 
+alpha = 90,180
+tile = 0,1
+tilespacing = 120,150
+
+[bg KI 6]
+type = normal
+spriteno = 1,1
+start = 0, 0
+delta = .76,.94
+velocity = 0,-.9
+scalestart = 0.5,0.5
+mask = 1
+layerno = 0
+sin.x = 3, 230
+trans = add
+tile = 1,1
+tilespacing = 100,130
+
+[bg KI 7]
+type = normal
+spriteno = 1,2
+start = -100, 0
+delta = .9,.94
+velocity = .2,-1.35
+scalestart = 0.5,0.5
+mask = 1
+layerno = 1
+sin.x = 3, 230
+trans = add
+tile = 1,1
+tilespacing = 220,180
+
+[bg KI 8]
+type = normal
+spriteno = 1,0
+start = -139, 0
+delta = .93,.94
+velocity = .34,-1.38
+scalestart = 0.5,0.5
+mask = 1
+layerno = 1
+sin.x = 3, 230
+trans = addalpha
+alpha = 100,170
+tile = 1,1
+tilespacing = 250,150
+
+;----------------------------------------------
+
+[BG Floor]
+type = parallax
+spriteno = 0,1
+start = 0,0
+delta = .98,.98
+xscale = .75,.75
+tile = 1,0
+mask = 1
+
