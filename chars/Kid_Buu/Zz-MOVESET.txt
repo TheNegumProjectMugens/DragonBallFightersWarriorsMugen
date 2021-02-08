@@ -1,0 +1,42 @@
+
+A - Light Combo
+
+B - Heavy Combo
+
+C - Ki Blast
+
+S - Power Charge
+
+COMBOS:
+
+a,a,a,a -  Light
+
+b,b,b,b,b - Heavy
+
+b,b,a - Air
+
+a,a,a,a,b,b,b,b,b,b,b,a - Full
+
+SPECIALS:
+
+D,DF,F,a - Chou Makouhou
+
+D,DB,B,a - Mystic Ball Attack
+
+D,DF,F,b - Pearl Flash
+
+D,DB,B,b - Shunkan Ido
+
+D,DF,F,c - Majin Kamehameha
+
+D,DB,B,c - Absorbtion
+
+D+a - Brutal Voice
+
+D+b - Mystic Kick
+
+D+c - Human Extinction Attack
+
+SUPER: 
+
+x - Super Vanishing Ball

@@ -1,0 +1,26 @@
+
+A - Light Slash
+
+B - Heavy Slash
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Sword Throw
+
+D,DB,B,a - Hero's Flute (Hold)
+
+D,DF,F,b - Sword Speed Attack
+
+D,DB,B,b - AfterImage
+
+D,DF,F,c - Brave Sword Slash
+
+D,DB,B,c - Brave Cannon
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Brave Sword Attack

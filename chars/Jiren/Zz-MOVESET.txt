@@ -1,0 +1,164 @@
+Note: This character has more than 3 bars of power,
+but effectively has only 3.
+ If a Special or Super is used with more than 3 bars,
+the character's power will reduce to 3 bars, and then
+lose the amount of power that they normally would.
+ The only scenario where the character will not lose power
+is when using power to transform.
+ This limitation does not apply to Mastered Ultra Instinct,
+and it can use all 6 bars of power for Specials and Supers.
+
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+FORMS:
+(note: hold the combination of buttons listed when
+selecting the character to start the match in that form)
+
+a - Base form (without Super Armor)
+
+x - 30% Power (without Super Armor)
+
+y - 70% Power (without Super Armor)
+
+z - 100% Power (without Super Armor)
+
+S+a - Base form (with Super Armor)
+
+S+x - 30% Power (with Super Armor)
+
+S+y - 70% Power (with Super Armor)
+
+S+z - 100% Power (with Super Armor)
+
+COMBOS:
+
+1% Power:
+
+a,a,a,a - Combo 1
+
+b,b,b - Heavy
+
+b,b,a - Air
+
+a,a,a,a,b,b,b - Full
+
+30% Power:
+
+a,a,a,a,a,a,a - Light
+
+b,b,b,b - Heavy
+
+b,b,b,a - Air
+
+a,a,a,a,a,a,a,b,b,b,b,b,b,a - Full
+
+70% Power:
+
+a,a,a,a,a,a,a,a,a - Light
+
+b,b,b,b,b - Heavy
+
+b,b,b,a,a - Air
+
+a,a,a,a,a,a,a,a,b,b,b,b,b,b,b,a,a - Full
+
+100% Power:
+
+a,a,a,a,a,a,a,a,a,a - Light
+
+b,b,b,b,b,b - Heavy
+
+b,b,b,a,a,a - Air
+
+a,a,a,a,a,a,a,a,a,b,b,b,b,b,b,b,b,a,a,a - Full
+
+SPECIALS:
+
+1% Power:
+
+D,DF,F,a - Power Pressure
+
+D,DB,B,a - Shockwave Punch
+
+D,DF,F,b - Power Gauntlet
+
+D,DB,B,b - Judgement Glare
+
+D,DF,F,c - Power Impact
+
+D,DB,B,c - Power Iris
+
+D+a = 30% Power
+
+D+F+a = 70% Power
+
+D+B+a = 100% Power
+
+30% Power:
+
+D,DF,F,a - Power Pressure
+
+D,DB,B,a - Shockwave Punch
+
+D,DF,F,b - Greater Gauntlet
+
+D,DB,B,b - Judgement Rejection
+
+D,DF,F,c - Power Impact
+
+D,DB,B,c - Greater Power Iris
+
+D+a = 70% Power
+
+D+B+a = 100% Power
+
+70% Power:
+
+D,DF,F,a - Power Pressure
+
+D,DB,B,a - Flashing Fists
+
+D,DF,F,b - Strongest Power Gauntlet
+
+D,DB,B,b - Judgement Rejection
+
+D,DF,F,c - Power Impact
+
+D,DB,B,c - Power Overheat
+
+D+a - 100% Power
+
+100% Power:
+
+D,DF,F,a - Overwhelming Power Pressure
+
+D,DB,B,a - Flashing Fists
+
+D,DF,F,b - Final Power Rush
+
+D,DB,B,b - Power Storm
+
+D,DF,F,c - Instantaneous Power Impact
+
+D,DB,B,c - Power Overheat Magnetron
+
+SUPER: 
+
+1% Power / 30% Power:
+
+x - Ultimate Power Impact
+
+70% Power:
+
+x - Power Eradicator
+
+100% Power:
+
+x - Power Overheat Annihilation

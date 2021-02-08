@@ -1,0 +1,24 @@
+[Info]
+name ="Goku"
+displayname ="Goku SSB"
+versiondate =05/08/2017
+mugenversion =1.0
+author ="InSeph"
+pal.defaults =1
+
+[Files]
+sprite =GokuSSB.sff
+anim =GokuSSB.air
+sound =GokuSSB.snd
+cmd =GokuSSB.cmd
+cns =GokuSSB.cns
+stcommon =common1.cns
+st =GokuSSB.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

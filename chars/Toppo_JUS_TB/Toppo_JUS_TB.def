@@ -1,0 +1,18 @@
+[Info]
+name="Toppo_JUS_TB"
+displayname="Toppo"
+versiondate=24/11/17
+mugenversion=1.0
+author="This Boy"
+pal.defaults=1
+[Files]
+sprite=Toppo_Pocket_TB.sff
+sound=Toppo_Pocket_TB.snd
+anim=Toppo_Pocket_TB.air
+cmd=Toppo_Pocket_TB.cmd
+cns=Toppo_Pocket_TB.cns
+st=Toppo_Pocket_TB.cns
+stcommon=common1.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

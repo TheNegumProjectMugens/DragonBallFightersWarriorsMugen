@@ -1,0 +1,25 @@
+[Info]
+name ="Mr Satan"
+displayname ="Mr Satan"
+versiondate =18/01/2018
+mugenversion =1.0
+author ="Cerdonio"
+pal.defaults =1
+
+[Files]
+sprite =Mr Satan.sff
+anim =Mr Satan.air
+sound =Mr Satan.snd
+cmd =Mr Satan.cmd
+cns =Mr Satan.cns
+stcommon =common1.cns
+st =Mr Satan.cns
+pal1=1.act
+pal2=
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

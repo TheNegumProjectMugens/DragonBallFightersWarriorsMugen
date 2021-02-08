@@ -1,0 +1,24 @@
+[Info]
+name ="Masked Saiyan"
+displayname ="Masked Saiyan"
+versiondate =18/01/2018
+mugenversion =1.0
+author ="InSeph, edited by Shiruzato/Mythos, sprites by Martin720"
+pal.defaults =1
+
+[Files]
+sprite =Masked Saiyan.sff
+anim =Masked Saiyan.air
+sound =Masked Saiyan.snd
+cmd =Masked Saiyan.cmd
+cns =Masked Saiyan.cns
+stcommon =common1.cns
+st =Masked Saiyan.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

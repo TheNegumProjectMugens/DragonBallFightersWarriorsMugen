@@ -1,0 +1,29 @@
+Moveset
+
+A - Punch
+
+B - Saber
+
+C - Ki Blast
+
+S - Power Charge
+
+Down + B - Upper Kick
+
+SPECIALS:
+
+D,DF,F,a - Shockwave
+
+D,DB,B,a - Silent Slash
+
+D,DF,F,b - Slash Combo
+
+D,DB,B,b - Blade Slash
+
+D,DF,F,c - God Splitter
+
+D,DB,B,c - Heavenly Arrow (Hold)
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Instant Severance

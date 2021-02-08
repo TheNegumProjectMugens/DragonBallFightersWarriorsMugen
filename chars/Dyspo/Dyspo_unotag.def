@@ -1,0 +1,26 @@
+﻿; ---- Created by Uno Tag Team Patcher ---- ;
+[Info]
+name = "Vegetto"
+displayname = "Vegetto SSG"
+versiondate = 01\10\2017
+mugenversion = 1.0
+author = "Multyargumon"
+pal.defaults = 1
+
+[Files]
+sprite = VegettoSSG.sff
+anim = VegettoSSG.air
+sound = VegettoSSG.snd
+cmd =VegettoSSG_unotag\VegettoSSG.cmd
+cns = VegettoSSG.cns
+stcommon = common1.cns
+st = VegettoSSG.cns
+st1 =VegettoSSG_unotag\IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+pal1 = 1.act
+st9=VegettoSSG_unotag\tag_system.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

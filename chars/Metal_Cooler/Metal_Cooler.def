@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Metal Cooler"
+displayname ="Metal Cooler"
+versiondate =25/12/2017
+mugenversion =1.0
+author ="Knightmare, edited by Shiruzato/MYTHOS"
+pal.defaults =1
+
+[Files]
+sprite =Metal_Cooler.sff
+anim =Metal_Cooler.air
+sound =Metal_Cooler.snd
+cmd =Metal_Cooler.cmd
+cns =Metal_Cooler.cns
+stcommon =common1.cns
+st =Metal_Cooler.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

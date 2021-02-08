@@ -1,0 +1,30 @@
+[Info]
+name="Hit"
+displayname="Hit"
+versiondate=08/02/2018
+mugenversion =1.0
+author="Knightmare, edited by Shiruzato/MYTHOS"
+pal.defaults=1
+
+[Files]
+sprite=Hit.sff
+sound=Hit.snd
+anim=Hit.air
+cmd=Hit.cmd
+cns=Hit.cns
+st=Hit.cns
+stcommon=common1.cns
+pal1=1.act
+pal2=1.act
+pal3=1.act
+pal4=1.act
+pal5=1.act
+pal6=1.act
+pal7=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

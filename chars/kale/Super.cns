@@ -1,0 +1,584 @@
+;------------------------------SUPER----------------------------------------
+; Crush Blast
+[Statedef 3000]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd= -3000
+ctrl = 0
+velset = 0,0
+anim = 3000
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S1,197
+volume = 100
+channel = -1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S1,7030
+volume = 100
+channel = 1
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+movetime = 100
+anim = -1
+sound = -1
+pos = 0,0
+darken = 0
+unhittable = 1
+
+[State 3000, VarSet]
+type = Varset
+trigger1 = time = 0
+v = 12
+value = -100
+
+[State 3000, VarSet]
+type = Varset
+trigger1 = time = 100
+v = 12
+value = 0
+
+[State 3000, VarAdd]
+type = VarAdd
+trigger1 = time >= 40 && Var(12) < 0
+v = 12
+value = 6
+
+[State 3000, BGColorFX]
+type = BGPalFX
+trigger1 = Time > 0
+time = 1
+add = Var(12),Var(12),Var(12)
+
+[State 0, Explod]
+type = Explod
+trigger1 = Time = 0
+anim = 7030
+ID = 7030
+pos = 7,19
+sprpriority = 2
+supermove = 1
+removetime = -2
+bindtime = -1
+ownpal = 1
+scale = 0.2,0.2
+removeongethit = 1
+ontop = 1
+supermovetime = 999
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = Time = 0
+anim = 7030
+ID = 7030
+pos = 3,-1
+sprpriority = 2
+supermove = 1
+removetime = -2
+bindtime = -1
+ownpal = 1
+scale = 0.1,0.1
+removeongethit = 1
+ontop = 1
+supermovetime = 999
+ignorehitpause = 1
+
+[State 0, Crush Blast Charge FX]
+type = Helper
+trigger1 = time = 15
+helpertype = normal
+name = "Crush Blast Charge FX"
+ID = 3005
+stateno = 3005
+pos = 0,0
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+size.xscale = 0.3
+size.yscale = 0.3
+supermovetime = 999
+
+[State 0,  Crush Blast Helper]
+type = Helper
+trigger1 = time = 105
+helpertype = normal
+name = "Crush Blast Helper"
+ID = 3010
+stateno = 3010
+pos = 0,0
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+size.xscale = 0.7
+size.yscale = 0.7
+
+[State 8030: Super Portrait Crush Blast]
+type = Helper
+trigger1 = time = 0
+helpertype = normal
+name = "Super Portrait Crush Blast"
+ID = 8030
+stateno = 8030
+pos = 160,-120
+postype = Left
+facing = 1
+keyctrl = 0
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+supermovetime = 999
+
+[State 0, Crush Blast Aura Charge]
+type = Helper
+trigger1 = time = 15
+helpertype = normal
+name = "Crush Blast Aura Charge"
+ID = 3015
+stateno = 3015
+pos = 0,0
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+size.xscale = 0.6
+size.yscale = 0.6
+supermovetime = 999
+
+[State 0, Run Fwd FX]
+type = Explod
+trigger1 = time >= 15 && timemod = 10,0
+anim = 6020
+ID = 6020
+pos = 17*Helper(999999),Fvar(16),3
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .3*Helper(999999),Fvar(16),.4*Helper(999999),Fvar(16)
+vel = 2,0
+sprpriority = 1
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermove = 99999
+pausemove = 99999
+
+[State 0, Run Fwd FX]
+type = Explod
+trigger1 = time >= 15 && timemod = 10,0
+anim = 6020
+ID = 6020
+pos = -5*Helper(999999),Fvar(16),7
+postype = p1
+facing = -1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .3*Helper(999999),Fvar(16),.4*Helper(999999),Fvar(16)
+vel = -2,0
+sprpriority = 3
+ontop = 1
+ownpal = 1
+removeongethit = 1
+supermove = 99999
+pausemove = 99999
+
+[State 0, ChangeAnim]
+type = ChangeAnim
+trigger1 = time > 90 && numhelper(3010) > 0
+value = 3000
+elem = 5
+
+[State 210, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+;-------------------------------------------------------------------------------
+; Crush Blast Charge FX
+[Statedef 3005]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim = 3005
+sprpriority = 7
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S1,1505
+volume = 100
+channel = -1
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+pos = 30,-11
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = add
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = root,stateno != 3000
+trigger2 = root,movetype = H
+trigger3 = root,time = 106
+trigger4 = root,time = 107
+;-------------------------------------------------------------------------------
+; Crush Blast Helper
+[Statedef 3010]
+type    = S
+movetype= I
+physics = N
+juggle  = 2
+velset = 0,0
+ctrl = 0
+anim = 3010
+sprpriority = 7
+
+[State 0, StopSnd]
+type = StopSnd
+trigger1 = time = 0
+channel = -1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = unguardable
+
+[State 0, AttackMulSet]
+type = AttackMulSet
+trigger1 = 1
+value = 1+root,fvar(2)+root,fvar(3)
+
+[State 0, StateTypeSet]
+type = StateTypeSet
+trigger1 = time = 4
+statetype = S
+movetype = A
+physics = N
+
+[State 0, StateTypeSet]
+type = StateTypeSet
+trigger1 = time = 104
+statetype = S
+movetype = I
+physics = N
+
+[State 0, BindToParent]
+type = BindToroot
+trigger1 = 1
+pos = 105,69
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 3000-time*25,256
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,200
+volume = 100
+channel = -1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S1,1510
+volume = 100
+channel = -1
+
+[State 200, 1]
+type = HitDef
+trigger1 = 1
+attr = A, HA
+animtype  = heavy
+damage = 4,0
+Hitflag = MAFDE
+guardflag = MA
+pausetime = 0,0
+sparkno = -1
+guard.sparkno = -1
+sparkxy = -15,0
+hitsound = S1,ifelse(time > 102,1515,2666)
+guardsound = Sifelse(time > 102,5,4),ifelse(time > 102,26,1)
+ground.type = High
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = ifelse(time > 102,-6,-2),ifelse(time > 102,-8,0)
+air.velocity =ifelse(time > 100,-6,-2),ifelse(time > 102,-8,0)
+Fall = ifelse(time > 102,1,0)
+Fall.recover = 0
+
+[State 0, EnvShake]
+type = EnvShake
+triggerall = time < 110
+trigger1 = timemod = 5,0
+time = 5
+ampl = -12
+
+[State 0, Explod]
+type = Explod
+triggerall = time > 102
+triggerall = numexplod(320) = 0
+trigger1 = movecontact = 1
+anim = 1515
+ID = 320
+pos = 0,105
+postype = p2
+facing = -1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = 0.7,0.7
+sprpriority = 5
+ontop = 1
+ownpal = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 120
+trigger2 = root,stateno != 3000
+;---------------------------------------------------------------------------
+; Crush Blast Aura Charge
+[Statedef 3015]
+type    = S
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 3015
+sprpriority = 3
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+pos = 3,7
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 256,256
+
+[State 200, End]
+type = Destroyself
+trigger1 = root,movetype = H
+
+[State 0, White Blank]
+type = Explod
+trigger1 = time = 0
+anim = 199
+ID = 199
+pos = 0,250
+postype = left
+facing = 1
+vfacing = 1
+bindtime = -1
+removetime = -2
+scale = 999,999
+sprpriority = 9
+ontop = 1
+ownpal = 1
+removeongethit = 0
+ignorehitpause = 1
+supermove = 99999
+pausemove = 99999
+supermovetime = 99999
+pausemovetime = 99999
+
+[State 200, End]
+type = Changestate
+trigger1 = root,stateno != 3000
+value = 3016
+;---------------------------------------------------------------------------
+; Crush Blast Aura Charge End
+[Statedef 3016]
+type    = S
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 3016
+sprpriority = 3
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S1,198
+volume = 100
+channel = -1
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = time = 0
+id = 6020
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 200-(time*20),256
+
+[State 0, White Blank]
+type = Explod
+trigger1 = time = 0
+anim = 199
+ID = 199
+pos = 0,250
+postype = left
+facing = 1
+vfacing = 1
+bindtime = -1
+removetime = -2
+scale = 999,999
+sprpriority = 9
+ontop = 1
+ownpal = 1
+removeongethit = 0
+ignorehitpause = 1
+supermove = 99999
+pausemove = 99999
+supermovetime = 99999
+pausemovetime = 99999
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 10
+trigger2 = root,movetype = H
+
+;-------------------------------------------------------------------------
+; Super Portrait Crush Blast
+[Statedef 8030]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+anim = 8030
+ctrl = 0
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = root,pos y- 80
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = time < 10
+value = 1+time*25
+scale = .1+time*.05,.1+time*.05
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = time >= 10
+value = 0
+scale = .5,.5
+
+[State 0, Super Portrait]
+type = Explod
+trigger1 = time = 10
+anim = 8000
+ID = 8030
+pos = -300,-300
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = 80
+scale = 1,1
+sprpriority = -1
+ontop = 0
+ownpal = 1
+removeongethit = 1
+trans = add
+supermovetime = 999
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = time = [10,90]
+flag = nobardisplay
+flag2 = noBG
+flag3 = nomusic
+ignorehitpause = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = time = [10,90]
+flag = noFG
+ignorehitpause = 1
+
+[State 0, BGPalFX]
+type = BGPalFX
+trigger1 = time > 0
+time = 2
+add = -256+var(12),-256+var(12),-256+var(12)
+ignorehitpause = 1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 12
+value = 0
+
+[State 0, VarAdd]
+type = VarAdd
+triggerall = var(12) < 256
+trigger1 = time >= 90
+v = 12
+value = 25
+
+[State 0, Trans]
+type = Trans
+trigger1 = time >= 90
+trans = addalpha
+alpha = 256-var(12),256
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 100

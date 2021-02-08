@@ -1,0 +1,80 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+FORMS:
+(note: hold the combination of buttons listed when
+selecting the character to start the match in that form)
+
+a - Base form
+
+S+a - Condemnation of a God: Corruption
+
+COMBOS:
+
+Base Form:
+
+a,a,a,a,a - Combo 1
+
+b,b,b,b,b,b,b - Combo 2
+
+a,b - Air Combo
+
+a,a,a,a,a,b,b,b,b,b,b,b,b - Full Combo
+
+Corrupted:
+
+a,a,a,a - Combo 1
+
+b,b,b,b - Combo 2
+
+a,b - Air Combo
+
+a,a,a,a,b,b,b,b - Full Combo
+
+SPECIALS:
+
+Base Form:
+
+D,DF,F,a - Almighty Palm
+
+D,DB,B,a - Divine Pressure
+
+D,DF,F,b - Blades of Judgment
+
+D,DB,B,b - Judgement Choir
+
+D,DF,F,c - Holy Wrath (Hold)
+
+D,DB,B,c - Lightning of Absolution
+
+D+a - Condemnation of a God: Corruption
+
+Corrupted:
+
+D,DF,F,a - Hallowed Smash
+
+D,DB,B,a - Purge of Sin
+
+D,DF,F,b - Celestial Hammer
+
+D,DB,B,b - Spiral of Condemnation
+
+D,DF,F,c - Holy Wrath
+
+D,DB,B,c - Light of Justice
+
+SUPER: 
+
+Base Form:
+
+x - Divine Wrath: Purification
+
+Corrupted:
+
+x - Genocidal Jugement: Universe Zamasu

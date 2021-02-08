@@ -1,0 +1,520 @@
+;===============================================================================
+; INTELIGENCIA ARTIFICIAL:
+;===============================================================================
+[Statedef -2]
+
+; TRANSFORMS PALS SSBLUE:
+
+[State 0, RemapPal]
+type = RemapPal
+triggerall = var(2) = 5
+trigger1 = var(3) = 1 ; KAIOKEN ON
+source = 1,1 ; NO CAMBIAR
+dest = 1,ifelse(numhelper(950) > 0||var(4) = 1,4,3)
+
+[State 0, RemapPal]
+type = RemapPal
+triggerall = var(2) = 5
+trigger1 = var(3) = 0 ; KAIOKEN OFF
+source = 1,1 ; NO CAMBIAR
+dest = 1,ifelse(stateno = 39000,ifelse(numhelper(950) > 0||var(4) = 1,6,5),ifelse(numhelper(950) > 0||var(4) = 1,2,1))
+
+[State 0, Run]
+triggerall = var(2) != 6
+type = ChangeState
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x > 100
+trigger1 = random < (ailevel * 100)/2
+value = 60
+
+[State 0, Run Atras]
+type = ChangeState
+triggerall = var(2) != 6
+triggerall = backedgebodydist > 50
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x < 100 && p2movetype = A
+trigger1 = random < (ailevel * 100)/4
+value = 70
+
+[State 0, Guard]
+type = ChangeState
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = (p2bodydist x < 50 && p2movetype = A) || (enemy,numproj > 0)
+trigger1 = random < (ailevel * 100)/2
+value = ifelse(statetype = A,132,130)
+
+[State 0, Power Charge]
+type = ChangeState
+triggerall = power < powermax
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x > 100
+trigger1 = random < (ailevel * 100)/4
+value = 500
+
+[State 0, Power Charge End]
+type = ChangeState
+triggerall = time >= 12
+triggerall = stateno = 500
+triggerall = ailevel > 0
+trigger1 = (p2bodydist x < 50) || (enemy,numproj > 0)
+trigger2 = ifelse(var(2) >= 4,power >= 3000,power = powermax)
+value = 501
+
+;_________________________
+
+;      NORMAL
+;_________________________
+
+[State 0, A SS1]
+type = ChangeState
+triggerall = var(2) = 1 || var(2) = 5
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x < 30
+trigger1 = random < (ailevel * 100)
+value = 2200
+
+[State 0, B SS2]
+type = ChangeState
+triggerall = var(2) = 2 || var(2) = 5
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x < 30
+trigger1 = random < (ailevel * 100)
+value = 11300
+
+[State 0, C]
+type = ChangeState
+triggerall = power >= 200
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x = [50,200]
+trigger1 = random < (ailevel * 100)/8
+value = 400
+
+[State 0, A Aire]
+type = ChangeState
+triggerall = statetype = A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x < 30
+trigger1 = random < (ailevel * 100)
+value = 600
+
+[State 0, B Aire SS2]
+type = ChangeState
+triggerall = var(2) = 2 || var(2) = 5
+triggerall = statetype = A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x < 30
+trigger1 = random < (ailevel * 100)
+value = 11610
+
+[State 0, C Aire]
+type = ChangeState
+triggerall = power >= 200
+triggerall = statetype = A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl
+triggerall = p2bodydist x = [50,200]
+trigger1 = random < (ailevel * 100)/8
+value = 620
+
+;_________________________
+
+;      SPECIAL
+;_________________________
+
+[State 0, Super Ki Liberation]
+type = ChangeState
+triggerall = var(2) < 5 || (var(2) = 5 && var(3) = 1)
+triggerall = var(2) = 3 || var(2) = 5
+triggerall = power >= 500
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x = [-80,80]
+trigger1 = random < (ailevel * 100)/4
+value = 1000
+
+[State 0, One Ich Punch]
+type = ChangeState
+triggerall = var(2) = 5 && var(3) = 0
+triggerall = power >= 500
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x < 50
+trigger1 = random < (ailevel * 100)/4
+value = 38000
+
+[State 0, Super Explosive Wave]
+type = ChangeState
+triggerall = var(2) = 2 || var(2) = 3 || var(2) = 5
+triggerall = power >= 1500
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x = [-80,80]
+trigger1 = random < (ailevel * 100)
+value = 32100
+
+[State 0, Kaioken]
+type = ChangeState
+triggerall = var(2) = 0 || var(2) = 5
+triggerall = var(3) = 0
+triggerall = power >= 1500
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x >= 100
+trigger1 = random < (ailevel * 100)
+value = 1200
+
+[State 0, Hakai]
+type = ChangeState
+triggerall = var(2) = 5
+triggerall = power >= 1500
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x < 50
+trigger1 = random < (ailevel * 100)
+value = 38300
+
+[State 0, Kamehameha]
+type = ChangeState
+triggerall = var(2) != 6
+ifelse(var(2) = 5,power >= 1500,power >= 1000)
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x = [100,300]
+trigger1 = random < (ailevel * 100)/2
+value = 1400
+
+[State 0, Super Energy Blast]
+type = ChangeState
+triggerall = var(2) = 2||var(2) = 5
+triggerall = power >= 1500
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x < 75
+trigger1 = random < (ailevel * 100)
+value = 32500
+
+[State 0, Super Energy Blast Aire]
+type = ChangeState
+triggerall = var(2) = 2||var(2) = 5
+triggerall = power >= 1500
+triggerall = statetype = A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x < 75
+triggerall = p2bodydist y > 0
+trigger1 = random < (ailevel * 100)
+value = 32580
+
+;_________________________
+
+;      SUPER
+;_________________________
+
+[State 0, Kamehameha Kaioken x20]
+type = ChangeState
+triggerall = var(2) = 5
+triggerall = power >= 3000
+triggerall = statetype != A
+triggerall = ailevel > 0 && roundstate = 2
+triggerall = ctrl || numhelper(700) > 0
+triggerall = p2bodydist x = [100,400]
+trigger1 = random < (ailevel * 100)*2
+value = 39000
+
+[State 0, Armor Break]
+type = Helper
+Triggerall = var(4) = 0
+triggerall = movetype = H
+trigger1 = life <= lifemax/2 && numhelper(950) = 0
+helpertype = normal
+name = "Armor Break"
+ID = 950
+stateno = 950
+pos = 0,-30
+postype = p1
+facing = 1
+supermove = 9999999999
+pausemove = 9999999999
+supermovetime = 99999999
+pausemovetime = 99999999999
+;===============================================================================
+;---------------------------Estados usados Siempre------------------------------
+;===============================================================================
+[Statedef -3]
+[State 0, Helper de Conexiones]
+type = Helper
+Triggerall = numhelper(700) = 0
+trigger1 = (stateno = 200||stateno = 600||stateno = 2200||stateno = 2210||stateno = 15200||stateno = 15210) && movecontact
+trigger2 = stateno = 210 && time > 36
+trigger3 = (stateno = 300||stateno = 310||stateno = 2310||stateno = 11300||stateno = 15310||stateno = 15320) && movecontact
+trigger4 = (stateno = 400||stateno = 620) && (ifelse(var(13) = 4,time > 35,time > 15))
+trigger5 = stateno = 610 && time > 25
+trigger6 = stateno = 1000 && time > 32 && numhelper(1050) = 0
+trigger7 = stateno = 1100 && time > 80 && numhelper(1150) = 0
+trigger8 = stateno = 1300 && time >= 47
+trigger9 = (stateno = 1401||stateno = 1402) && time > 2 && numhelper(1450) = 0
+trigger10 = stateno = 1500 && time > 100
+trigger11 = stateno = 2300 && time > 21 && movecontact
+trigger12 = (stateno = 2610||stateno = 11610) && movecontact
+trigger13 = (stateno = 30200||stateno = 36200) && (animelemtime(11) >= 0 ||animelemtime(12) >= 0)
+trigger14 = stateno = 30100 && time > 30 && numhelper(30150) = 0
+trigger15 = stateno = 32100 && time > 30 && numhelper(32150) = 0
+trigger16 = stateno = 32200 && time > 32 && numhelper(32250) = 0
+trigger17 = (stateno = 13310||stateno = 15610) && time > 20
+trigger18 = stateno = 13610 && time > 23
+trigger19 = stateno = 34501 && time > 59 && numhelper(1550) = 0
+trigger20 = stateno = 36202 && time > 52
+trigger21 = (stateno = 36500 && time > 72) || (stateno = 36501 && time > 30)
+trigger22 = stateno = 36600 && time > 90
+trigger23 = stateno = 38000 && time > 49
+trigger24 = stateno = 38300 && time > 41
+trigger25 = stateno = 38301 && time > 17
+helpertype = normal
+name = "Helper de Conexiones"
+ID = 700
+stateno = 999
+pos = 999999,999999
+postype = p1
+
+[State 0, HELPER ESCALA]
+type = Helper
+trigger1 = NUMHELPER(999999) = 0
+helpertype = normal
+name = "HELPER ESCALA"
+ID = 999999
+stateno = 999999
+pos = 9999,9999
+postype = P1
+facing = 1
+keyctrl = 0
+ownpal = 1
+supermove = 999999
+pausemove = 999999
+supermovetime = 999999
+pausemovetime = 999999
+
+[State 0, Aura Permanente SSBLUE]
+type = Helper
+triggerall = alive
+trigger1 = var(2) = 5 && numhelper(560) = 0
+helpertype = normal
+name = "Aura Permanente"
+ID = 560
+stateno = 566
+pos = 0,0
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+supermove = 999
+supermovetime = 999
+pausemove = 999
+pausemovetime = 999
+;===============================================================================
+; Turn Transformaciones:
+;-------------------------------------------------------------------------------
+[State -3, Turn SS1 // SSBLUE]
+type = ChangeAnim
+trigger1 = var(2) = 1 || var(2) = 5
+trigger1 = anim = 5
+value = 2005
+;===============================================================================
+; Air C:
+;-------------------------------------------------------------------------------
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = prevstateno = 620 && time = 1
+value = 0
+;===============================================================================
+; Kaioken:
+;-------------------------------------------------------------------------------
+[State 0, EnvShake]
+type = EnvShake
+triggerall = var(3) = 1
+trigger1 = movehit = 1
+time = 5
+
+[State 0, Pause]
+type = Pause
+triggerall = stateno != 210
+triggerall = var(3) = 1
+trigger1 = movehit = 1
+time = 3
+;===============================================================================
+; Pared Rota // Polvo en P2
+;-------------------------------------------------------------------------------
+[State 0, Helper]
+type = Helper
+triggerall = numhelper(30250) = 0
+trigger1 = p2stateno = 30206
+trigger2 = p2stateno = 36206
+helpertype = normal
+name = "Pared Rota"
+ID = 30250
+stateno = 30250
+pos = 0,-30
+postype = p2
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 0, Helper]
+type = Helper
+triggerall = numhelper(36250) = 0
+trigger1 = p2stateno = 36205
+helpertype = normal
+name = "Polvo en P2"
+ID = 36250
+stateno = 36250
+pos = 0,0
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+;-------------------------------------------------------------------------------
+; FVARS:
+;-------------------------------------------------------------------------------
+[State 0, VarSet]
+type = VarSet
+trigger1 = var(3) = 0
+fv = 3
+value = 0
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = var(3) = 1
+fv = 3
+value = .5
+
+[State 0, AttackMulSet]
+type = AttackMulSet
+trigger1 = 1
+value = 1+fvar(2)+fvar(3)
+
+[State 0, DefenceMulSet]
+type = DefenceMulSet
+trigger1 = 1
+value = 1-fvar(2)
+;===============================================================================
+; SSBLUE:
+;-------------------------------------------------------------------------------
+[State -3, VarSet - SSBLUE]
+type = VarSet
+trigger1 = 1
+v = 2
+value = 5
+
+[State -3, VarSet, Golpeado]
+type = VarSet
+trigger1 = var(2) = 5
+v = 10
+value = 1000
+
+[State -3, VarSet, Apariencia]
+type = VarSet
+trigger1 = var(2) = 5
+v = 11
+value = 2000
+
+[State -3, VarSet, Specials]
+type = VarSet
+trigger1 = var(2) = 5
+v = 14
+value = 29000
+;-------------------------------------------------------------------------------
+; COMUNES:
+[State -3, VarSet,Apariencia]
+type = VarSet
+trigger1 = var(2) = 0
+v = 11
+value = 0
+
+[State -3, VarSet,Golpeado]
+type = VarSet
+trigger1 = var(2) = 0
+v = 10
+value = 0
+
+[State -3, VarSet, Specials]
+type = VarSet
+trigger1 = var(2) = 0
+v = 14
+value = 0
+;-------------------------------------------------------------------------------
+; Sonidos Comunes:
+;-------------------------------------------------------------------------------
+[State 0, Saltando]
+type = PlaySnd
+triggerall = stateno = 40
+trigger1 = Time = 1
+value = S40,1
+volume = 55
+channel = -1
+
+[State 0, Super Jump]
+type = PlaySnd
+triggerall = stateno = 80
+trigger1 = Time = 1
+value = S60,1
+volume = 55
+channel = -1
+
+[State 0, Land]
+type = PlaySnd
+triggerall = stateno = 52
+trigger1 = time = 1
+value = S52,1
+volume = 50
+
+[State 0, Run]
+type = PlaySnd
+triggerall = stateno = 60||stateno = 70
+trigger1 = time = 1
+value = S40,2
+volume = 50
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+TRIGGERALL = stateno != 500
+trigger1 = time = 1
+id = 550
+
+[State 0, StopSnd]
+type = StopSnd
+TRIGGERALL = stateno != 500
+trigger1 = time = 1
+channel = 1
+
+[State 0, StopSnd]
+type = StopSnd
+TRIGGERALL = stateno != 500
+trigger1 = time = 1
+channel = 2
+
+[State 0, Golpeado]
+type = PlaySnd
+trigger1 = movetype=H && (stateno!=[0,155]) && !time && HitOver=0 && random%3=0
+value = 5000,ifelse(random < 500,1,ifelse(random < 500,2,3))
+
+[State 0, Solucion Stand Aire]
+type = ChangeState
+triggerall = stateno = 0||stateno = 20
+trigger1 = pos y < 0
+value = 50
+ctrl = 1

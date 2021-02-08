@@ -1,0 +1,45 @@
+Moveset:
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+D+B (in air) - God Crash
+
+COMBOS:
+
+a,a,a,a,a,a,a - Combo 1
+
+b,b,b,b,b,b - Combo 2
+
+a,a,a,b,b,b,b,b - Air Combo
+
+a,a,a,a,a,a,b,b,b,b,b,b,a,a,a,b,b,b,b,b - Full Combo
+
+SPECIALS:
+
+D,DF,F,a - God Ki Palm
+
+D,DB,B,a - Super Explosive Wave
+
+D,DF,F,b - Savage Strike (Hold)
+
+D,DB,B,b - Banshee Blast
+
+D,DF,F,c - Super God Kamehameha
+
+D,DB,B,c - God Big Bang Attack
+
+D+c - Spirit Stab
+
+c - Spirit Slash (after Spirit Stab)
+
+D+b - Sheer Force
+
+SUPER: 
+
+x - Final Kamehameha

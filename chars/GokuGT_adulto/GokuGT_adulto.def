@@ -1,0 +1,25 @@
+[Info]
+name ="Goku"
+displayname ="Goku GT"
+versiondate =10/06/2017
+mugenversion =1.0
+author ="Rey Goku Loquendor"
+pal.defaults =1
+
+[Files]
+sprite =Goku.sff
+anim =Goku.air
+sound =Goku.snd
+cmd =Goku.cmd
+cns =Goku.cns
+stcommon =common1.cns
+st =Goku.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+st4=SSB.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,26 @@
+[Info]
+name ="Goku black JUS2"
+displayname ="Goku black JUS2"
+versiondate =25/12/2017
+mugenversion =1.0
+author ="Base JUS by MIKEL8888, original black jus created by inseph, and black JUS2 by viniciusonico"
+pal.defaults =1
+
+[Files]
+sprite =Black.sff
+anim =Black.air
+sound =Black.snd
+cmd =Black.cmd
+cns =Black.cns
+stcommon =common1.cns
+st =Black.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+st4=SS1.cns
+st5=SSR.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

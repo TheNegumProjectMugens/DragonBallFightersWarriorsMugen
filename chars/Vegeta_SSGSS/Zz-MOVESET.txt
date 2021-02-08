@@ -1,0 +1,26 @@
+
+A - Punch
+
+B - Kick
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Dark Impact
+
+D,DB,B,a - Final Impact
+
+D,DF,F,b - Final Galick Cannon
+
+D,DB,B,b - God Impact
+
+D,DF,F,c - Final Flash
+
+D,DB,B,c - Big Bang Attack 
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Gamma Burst Flash

@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Goku SSJ Blue V2"
+displayname ="Goku SSB"
+versiondate =12/04/2017
+mugenversion =1.0
+author ="Mikel8888 (edited by InSeph)"
+pal.defaults =1
+
+[Files]
+sprite =Goku_SSGSS.sff
+anim =Goku_SSGSS.air
+sound =Goku_SSGSS.snd
+cmd =Goku_SSGSS.cmd
+cns =Goku_SSGSS.cns
+stcommon =common1.cns
+st =Goku_SSGSS.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

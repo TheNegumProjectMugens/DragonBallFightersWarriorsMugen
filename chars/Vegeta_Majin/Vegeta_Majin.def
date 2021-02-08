@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Majin Vegeta"
+displayname = "Majin Vegeta"
+versiondate = 26/07/2018
+mugenversion = 1.0
+author = "Mikel8888, edited by Salah"
+pal.defaults = 1
+
+[Files]
+sprite = Vegeta_Majin.sff
+anim = Vegeta_Majin.air
+sound = Vegeta_Majin.snd
+cmd = Vegeta_Majin.cmd
+cns = Vegeta_Majin.cns
+stcommon = common1.cns
+st = Vegeta_Majin.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1 = 1.act
+pal2 = 2.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

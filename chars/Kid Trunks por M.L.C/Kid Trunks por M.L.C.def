@@ -1,0 +1,21 @@
+[Info]
+name="Kid Trunks por M.L.C"
+displayname="Kid Trunks"
+versiondate=11/12/2017
+mugenversion=1.1
+author="ElManic16"
+pal.defaults=
+[Files]
+sprite=Kid Trunks.sff
+sound=Kid Trunks.snd
+anim=Kid Trunks.air
+cmd=Kid Trunks.cmd
+cns=Kid Trunks.cns
+st=Kid Trunks.cns
+stcommon=common1.cns
+pal1=Kid Trunks.act
+pal2=
+st1=SsjKid Trunks.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

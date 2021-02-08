@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Gogeta SSB"
+displayname = "Gogeta SSB"
+versiondate = 20/06/2017
+mugenversion = 1.0
+author = "Salah"
+pal.defaults = 1
+
+[Files]
+sprite = Gogeta.sff
+anim = Gogeta.air
+sound = Gogeta.snd
+cmd = Gogeta.cmd
+cns = Gogeta.cns
+stcommon = common1.cns
+st = Gogeta.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+st4 = Soul Punisher.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

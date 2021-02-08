@@ -1,0 +1,24 @@
+[Info]
+name ="Saibaman"
+displayname ="Saibaman"
+versiondate =20/10/2017
+mugenversion =1.0
+author ="InSeph edited by viniciusonico"
+pal.defaults =1
+
+[Files]
+sprite =Saibaman.sff
+anim =Saibaman.air
+sound =Saibaman.snd
+cmd =Saibaman.cmd
+cns =Saibaman.cns
+stcommon =common1.cns
+st =Saibaman.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

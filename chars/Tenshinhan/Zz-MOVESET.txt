@@ -1,0 +1,38 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+COMBOS:
+
+Base Form:
+
+a,a,a,a - Combo 1
+
+b,b,b,b - Combo 2
+
+a,b - Air
+
+a,a,a,a,b,b,b,b,a,b - Full
+
+SPECIALS:
+
+D,DF,F,a - Volleyball Fist
+
+D,DB,B,a - Four Witches Barrage
+
+D,DF,F,b - Dodonpa
+
+D,DB,B,b - Multiform Technique
+
+D,DF,F,c - Kikouhou
+
+D,DB,B,c - Shin Kikouhou
+
+SUPER: 
+
+x - Domination Blast

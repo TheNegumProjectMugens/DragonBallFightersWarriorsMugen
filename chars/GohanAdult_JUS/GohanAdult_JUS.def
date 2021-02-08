@@ -1,0 +1,31 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Gohan Adult"
+displayname ="Gohan adult"
+versiondate =25/12/2015
+mugenversion =1.0
+author ="mikel8888 (edited by viniciusonico)"
+pal.defaults =1,2,3,4,5,6
+
+[Files]
+sprite =Goku_JUS.sff
+anim =Goku_JUS.air
+sound =Goku_JUS.snd
+cmd =Goku_JUS.cmd
+cns =Goku_JUS.cns
+stcommon =common1.cns
+st =Goku_JUS.cns
+pal1=coe.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+st4=SS1.cns
+st5=SS2.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

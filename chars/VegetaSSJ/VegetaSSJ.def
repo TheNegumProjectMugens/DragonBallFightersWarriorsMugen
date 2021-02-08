@@ -1,0 +1,24 @@
+[Info]
+name ="Vegeta"
+displayname ="Vegeta SSJ"
+versiondate =15/11/2017
+mugenversion =1.0
+author ="Mikel8888 (edit by InSeph)"
+pal.defaults =1
+
+[Files]
+sprite =VegetaSSJ.sff
+anim =VegetaSSJ.air
+sound =VegetaSSJ.snd
+cmd =VegetaSSJ.cmd
+cns =VegetaSSJ.cns
+stcommon =common1.cns
+st =VegetaSSJ.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,39 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Jiren The Gray"
+displayname = "Jiren"
+versiondate = 30/04/2018
+mugenversion = 1.0
+author = "Shiruzato/Mythos, with credit to Knightmare"
+pal.defaults = 1
+
+[Files]
+sprite = Jiren.sff
+anim = Jiren.air
+sound = Jiren.snd
+cmd = Jiren.cmd
+cns = Jiren.cns
+stcommon = common1.cns
+st = Jiren.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1=1.act
+pal2=2.act
+pal4=1.act
+pal5=1.act
+pal6=1.act
+pal7=1.act
+pal8=1.act
+pal9=1.act
+pal10=1.act
+pal11=1.act
+pal12=1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

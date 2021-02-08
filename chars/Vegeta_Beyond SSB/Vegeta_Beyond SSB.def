@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Vegeta"
+displayname = "Vegeta Beyond SSB"
+versiondate = 18/02/2018
+mugenversion = 1.0
+author = "Salah"
+pal.defaults = 1,2
+
+[Files]
+sprite = Vegeta_Beyond SSB.sff
+anim = Vegeta_Beyond SSB.air
+sound = Vegeta_Beyond SSB.snd
+cmd = Vegeta_Beyond SSB.cmd
+cns = Vegeta_Beyond SSB.cns
+stcommon = common1.cns
+st = Vegeta_Beyond SSB.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+pal1 = 1.act
+pal2 = 2.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

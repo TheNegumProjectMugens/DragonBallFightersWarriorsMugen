@@ -1,0 +1,26 @@
+[Info]
+name ="Vegeta GT"
+displayname ="Vegeta GT"
+versiondate =07/10/2017
+mugenversion =1.0
+author ="Blaze Mugen edit by (Espaço Mugen)"
+pal.defaults =1
+
+[Files]
+sprite =Vegeta GT.sff
+anim =Vegeta GT.air
+sound =Vegeta GT.snd
+cmd =Vegeta GT.cmd
+cns =Vegeta GT.cns
+stcommon =common1.cns
+st =Vegeta GT.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+st4=SSJ.cns
+st5=
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

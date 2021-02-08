@@ -1,0 +1,32 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Saber Slash
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Divine Retribution
+
+D,DB,B,a - Sudden Death Beam
+
+D,DF,F,b - God Slicer 
+
+D,DB,B,b - Fierce God Kick
+
+D,DF,F,c - Black Kamehameha
+
+D,DB,B,c - God Saber Dance
+
+Supers:
+
+D,DF,F,a+b - God Slicer Dance
+
+D,DF,F,b+c - Holy Light Grenade
+
+Ultimate: 
+
+D,DF,F,D,DF,F,a+b - The Work of a God

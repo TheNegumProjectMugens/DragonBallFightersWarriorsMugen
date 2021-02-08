@@ -1,0 +1,1307 @@
+;===============================================================================
+; Soul Punisher:
+;-------------------------------------------------------------------------------
+; Soul Punisher - Start
+[Statedef 1300]
+type    = S
+movetype= A
+physics = S
+juggle  = 2
+velset = 0,0
+ctrl = 0
+anim = 1300
+poweradd = -1000
+sprpriority = 2
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 100
+value = S5,19
+volume = 999
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 250
+value = S5,16
+volume = 999
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 70
+movetime = 70
+anim = -1
+sound = -1
+pos = 32,-80
+darken = 0
+unhittable = 1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,30
+volume = 999
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,30
+volume = 999
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,30
+volume = 999
+
+[State 3000, VarSet]
+type = Varset
+trigger1 = time = 0
+v = 12
+value = -100
+
+[State 3000, VarSet]
+type = Varset
+trigger1 = time = 30
+v = 12
+value = 0
+
+[State 3000, VarAdd]
+type = VarAdd
+trigger1 = time >= 20 && Var(12) < 0
+v = 12
+value = 6
+
+[State 3000, BGColorFX]
+type = BGPalFX
+trigger1 = Time > 0
+time = -1
+add = Var(12),Var(12),Var(12)
+supermovetime = 999
+
+[State 3000, Super Charge]
+type = Explod
+trigger1 = Time = 0
+anim = 7400
+ID = 7400
+pos = 4.20*Helper(999999),Fvar(16),-27*Helper(999999),Fvar(16)
+sprpriority = 2
+supermove = 1
+removetime = -2
+bindtime = -1
+ownpal = 1
+scale = .2*Helper(999999),Fvar(16),.2*Helper(999999),Fvar(16)
+removeongethit = 1
+ontop = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+
+[State 3000, PlaySnd - Super Charge]
+type = PlaySnd
+trigger1 = Time = 0
+value = S950,1
+volume = 50
+
+[State 0, remolino]
+type = Explod
+triggerall = time > 20
+triggerall = time < 100
+trigger1 = random < 500
+trigger1 = timemod = 8,0
+anim = 9085
+ID = 9085
+pos = -10,-50
+facing = 1
+accel = 0.03,-0.03
+scale = 0.5,0.5
+sprpriority = 9
+ownpal = 1
+removeongethit = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+
+[State 0, remolino]
+type = Explod
+triggerall = time > 20
+triggerall = time < 100
+trigger1 = random < 500
+trigger1 = timemod = 8,0
+anim = 9085
+ID = 9085
+pos = -10,-50
+facing = -1
+accel = -0.03,-0.03
+scale = 0.5,0.5
+sprpriority = 9
+ownpal = 1
+removeongethit = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+
+[State 0, remolino]
+type = Explod
+triggerall = time > 20
+triggerall = time < 100
+trigger1 = random < 500
+trigger1 = timemod = 8,0
+anim = 9085
+ID = 9085
+pos = -10,-70
+facing = 1
+accel = 0.03,0.03
+scale = 0.5,0.5
+sprpriority = 9
+ownpal = 1
+removeongethit = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+
+[State 0, remolino]
+type = Explod
+triggerall = time > 20
+triggerall = time < 100
+trigger1 = random < 500
+trigger1 = timemod = 8,0
+anim = 9085
+ID = 9085
+pos = -10,-70
+facing = -1
+accel = -0.03,0.03
+scale = 0.5,0.5
+sprpriority = 9
+ownpal = 1
+removeongethit = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = time = 101
+id = 9085
+
+[State 0, Orb - Start ]
+type = Helper
+trigger1 = time = 30
+helpertype = normal
+name = "Charge FX"
+ID = 9074
+stateno = 9074
+pos = 0,0
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 240
+value = S0,34
+volume = 999
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 240
+value = S0,34
+volume = 999
+
+[State 0: Orb - Arremeso]
+type = Helper
+trigger1 = time = 250
+helpertype = normal
+name = "orb"
+id = 9077
+pos = 35,-30
+postype = p1
+facing = 1
+stateno = 9077
+keyctrl = 0
+ownpal = 1
+supermovetime 	= 999
+ignorehitpause  = 1
+pausemovetime = 999
+size.xscale = .50
+size.yscale = .50
+
+[State 3000, Beams]
+type=helper
+triggerall = time >= 100
+triggerall = time <= 250
+trigger1 = timemod = 10,0
+helpertype=normal
+stateno=9076
+ID=9076
+name="Beams"
+postype=p1
+pos = -10,-60
+ownpal=1
+Ignorehitpause = 1
+supermovetime = 999
+size.xscale = .1
+size.yscale = .3
+
+[State 3000, superchargehelper]
+type=helper
+triggerall = time >= 100
+triggerall = time <= 250
+trigger1 = timemod = 10,0
+helpertype=normal
+stateno=9076
+ID=9076
+name="Beams"
+postype=p1
+pos = -10,-60
+ownpal=1
+Ignorehitpause = 1
+supermovetime = 999
+size.xscale = .1
+size.yscale = .3
+
+[State 0, ChangeAnim]
+type = ChangeAnim
+trigger1 = time > 250 && numhelper(9077) > 0
+value = 1300
+elem = 22
+
+[State 200, End]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;-------------------------------------------------------------------------------
+;Forming Orb 1
+[Statedef 9074]
+type            = S
+movetype= I
+physics         = N
+anim            = 9074
+ctrl            = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 5
+
+[State 0: Helper]
+type = Helper
+trigger1 = time = 1
+helpertype = normal
+name = "form_orb"
+id = 9075
+pos = 0,0
+postype = p1
+facing = 1
+stateno = 9075
+keyctrl = 0
+ownpal = 1
+supermovetime = 900
+pausemovetime = 900
+size.xscale = .17
+size.yscale = .17
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+time = 1
+pos = -12,-60
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 7300, ]
+type = AngleAdd
+trigger1 = time < 100
+value = 5
+
+[State 7300, ]
+type = AngleDraw
+trigger1 = time < 50
+scale = -.75+(.010*time),-.75+(.010*time)
+
+[State 0, ChangeAnim]
+type = ChangeAnim
+trigger1 = time = 50
+value = 9741
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = time = 50
+;-------------------------------------------------------------------------------
+;Forming Orb 2
+[Statedef 9075]
+type            = S
+movetype= I
+physics         = N
+anim            = 9075
+ctrl            = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 5
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+time = 1
+pos = -12,-60
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 7300, ]
+type = AngleAdd
+trigger1 = 1
+value = -9
+
+[State 7300, ]
+type = AngleDraw
+trigger1 = time < 50
+scale = -.75+(.010*time),-.75+(.010*time)
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = time = 50
+;-------------------------------------------------------------------------------
+;Effect Beams
+[Statedef 9076]
+type = A
+movetype = A
+physics = N
+ctrl = 0
+anim = 9076
+sprpriority = 3
+velset = 0,0
+
+[State 7510, fade]
+type=palfx
+trigger1=time=0
+time=20
+sinadd=-255,-255,-255,20
+
+[State 1006, assert]
+type=assertspecial
+trigger1=1
+flag=noshadow
+ignorehitpause=1
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+
+[State 0, AngleSet]
+type = AngleSet
+trigger1 = 1
+value = 0+(random%360)
+
+[State 0]
+type = trans
+trigger1 = 1
+trans = add
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = animtime  = 0
+;-------------------------------------------------------------------------------
+;Orb
+[Statedef 9077]
+type            = S
+movetype        = A
+physics         = S
+anim            = 9077
+ctrl            = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 5
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, PalFX]
+type = PalFX
+trigger1 =time = 5
+time=40
+sinadd=-255,-255,-255,100
+persistent = 1
+
+[State 14001, PosSet]
+type = PosSet
+trigger1 = 1
+x = pos x - (pos x - enemynear(0),pos x)/2
+y = pos y - (pos y - enemynear(0),pos y)/2
+
+[State 7300, trans]
+type = Trans
+trigger1 = 1
+trans = add
+alpha = 256,256
+
+[State 8061:    NotHitBy]
+type            = NotHitBy
+trigger1        = (Time > 0)
+time            = 1
+value           = SCA, NA, SA, HA, NT, ST, HT
+ignorehitpause  = 1
+
+[State 8061:    HitBy]
+type            = HitBy
+trigger1        = (Time > 0)
+value           = SCA, NP, SP, HP
+time            = 1
+ignorehitpause  = 1
+
+[State 8062:    HitOverride]
+type            = HitOverride
+trigger1        = (Time > 0)
+slot            = 1
+time            = 1
+stateno         = 9078
+attr            = SCA, NP, SP, HP
+ignorehitpause  = 1
+
+[State 8062: HitDef]
+type = HitDef
+trigger1 = 2
+attr = S, HP
+damage = 17
+
+
+animtype = Medium
+pausetime = 0,25
+;sparkno = 0
+sparkxy = 0, 0
+hitsound = s3,19
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 30
+ground.hittime = 30
+ground.velocity = -10,-5
+air.animtype = Back
+air.velocity = -2.5,-5
+air.juggle = 3
+fall = 1
+fall.recover = 0
+air.fall.recover = 0
+kill = 1
+p2stateno = 9080
+
+[State 1010, 3]
+type = PlaySnd
+trigger1 = movecontact
+value = 3,19
+volume = 255
+
+[State 0: Helper]
+type = Helper
+trigger1 = time = 1
+helpertype = normal
+name = "highlight"
+id = 9083
+facing = 1
+stateno = 9083
+keyctrl = 0
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+size.xscale = 1
+size.yscale = 1
+ignorehitpause =1
+
+[State 0: Helper]
+type = Helper
+trigger1 = animelem = 11
+helpertype = normal
+name = "highlight"
+id = 9085
+facing = 1
+stateno = 9085
+keyctrl = 0
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+size.xscale = .3
+size.yscale = .3
+ignorehitpause =1
+
+[State 0: elper]
+type = Helper
+trigger1 = numhelper(3204) < 5
+trigger1 = timemod = 5,0
+helpertype = normal
+name = "trail"
+id = 9084
+facing = 1
+stateno = 9084
+keyctrl = 0
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+size.xscale = 1
+size.yscale = 1
+ignorehitpause =1
+
+[State 0, ChangeState]
+type = ChangeState
+trigger1 = movehit
+value = 9078
+
+[State 1006, end]
+type=destroyself
+trigger1=movecontact
+trigger2=frontedgedist<-120||backedgedist<-120
+;-------------------------------------------------------------------------------
+;Orb Hit
+[Statedef 9078]
+type            = S
+movetype        = A
+physics         = S
+anim            = 9078
+ctrl            = 0
+poweradd        = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 5
+
+[State 3000, superchargehelper]
+type=helper
+trigger1 = time = 0
+helpertype=normal
+stateno=9079
+ID=9079
+name="Hit Effects"
+postype=p2
+pos=0,0
+ownpal=1
+persistent=1
+supermovetime = 100
+pausemovetime = 100
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = timemod = 2,0
+v = 11
+range = 1,70
+ignorehitpause = 0
+persistent = 1
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Blue]
+type = PalFX
+trigger1 = var(11) = [1,10]
+time = 10
+add = -104,-104,7
+mul = 256,256,256
+sinadd = 56,56,0,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Purple]
+type = PalFX
+trigger1 = var(11) = [11,20]
+time = 10
+add = 0,-200,0
+mul = 256,256,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Red]
+type = PalFX
+trigger1 = var(11) = [21,30]
+time = 10
+add = 0,-200,-200
+mul = 256,256,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Green]
+type = PalFX
+trigger1 = var(11) = [31,40]
+time = 10
+add = 0,100,50
+mul = 20,120,24
+sinadd = 85,110,55,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Orange]
+type = PalFX
+trigger1 = var(11) = [41,50]
+time = 10
+add = 40,-70,-200
+mul = 256,256,256
+sinadd = 40,30,0,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Yellow]
+type = PalFX
+trigger1 = var(11) = [51,60]
+time = 10
+add = 240,100,0
+mul = 250,224,0
+sinadd = 110,55,85,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Cyan]
+type = PalFX
+trigger1 = var(11) = [61,70]
+time = 10
+add = 10,-200,-50
+mul = 128,0,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = animtime = 0
+;-------------------------------------------------------------------------------
+;Orb Hit Effects
+[Statedef 9079]
+type            = S
+movetype= I
+physics         = N
+anim            = 9052
+ctrl            = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 5
+
+[State 0, BindToTarget]
+type = BindToTarget
+trigger1 = 1
+time = 1000
+ID = -1
+pos = 0,0,Mid
+persistent = 1
+
+[State 3000, superchargehelper]
+type=helper
+trigger1 = timemod = 10,0
+helpertype=normal
+stateno=9076
+ID=9076
+name="Beams"
+postype=p2
+pos=0,-25
+ownpal=1
+persistent=1
+supermovetime = 100
+pausemovetime = 100
+size.xscale = .3
+size.yscale = .3
+
+[State 3000, superchargehelper]
+type=helper
+trigger1 = timemod = 7,0
+helpertype=normal
+stateno=9082
+ID=9082
+name="rings"
+postype=p2
+pos=0,-50
+ownpal=1
+persistent=1
+supermovetime = 100
+pausemovetime = 100
+size.xscale = .5
+size.yscale = .5
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 60
+anim = 9080
+pos = 0,-25
+postype=p2
+supermove = 1
+pausemovetime = 90
+bindtime = 100
+ontop = 1
+ownpal = 1
+scale = 1,1
+removeongethit = 90
+ignorehitpause = 90
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = timemod = 10,1
+value = 3,21
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 86
+value = 3,16
+
+[State -1]
+Type = Helper
+trigger1 = time = 86
+StateNo = 9086
+ID = 9086
+PosType = P2
+Pos = 0,-50
+Ownpal = 1
+SprPriority = 5
+bindtime = 1
+IgnoreHitPause = 1
+Persistent = 0
+supermovetime = 999
+pausemovetime = 999
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 80
+anim = 9088
+ID = 9088
+pos = 0,0
+postype = back ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = 67
+supermove = 1
+pausemove = 1
+;scale = .5,.5
+sprpriority = 999
+
+[State 0, EnvShake]
+type = EnvShake
+trigger1 = time = 79
+time = 60
+freq = 100
+ampl = -6
+phase = 90
+
+[State 210, 4]
+type = destroyself
+trigger1 = Time = 86
+;-------------------------------------------------------------------------------
+;Orb Target State 1
+[Statedef 9080]
+type    = S
+movetype= H ;Get hit
+physics = N
+velset = 0,0
+anim = 5010
+ctrl = 0
+
+[State 3000, Super F] ;Invunerable to normal and special attacks for a bit
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 100
+
+[State 0, TargetLifeAdd]
+type = LifeAdd
+trigger1 = 1
+value = -2
+kill = 0
+absolute = 1
+
+[State 210, 4]
+type = changestate
+trigger1 = Time = 90
+value = 9081
+ctrl = 0
+;-------------------------------------------------------------------------------
+;Orb Target State 2
+[Statedef 9081]
+type    = S
+movetype= H ;Get hit
+physics = N
+velset = 0.1,-10
+anim = 5050
+ctrl = 0
+
+[State 931, 2] ;Gravity
+type = VelAdd
+Trigger1 = Time > 0
+y = .4
+
+[State 931, 3]
+type = LifeAdd
+Trigger1 = Time = 0
+value = -100
+
+[State 931, 4] ;Hit ground
+type = SelfState
+trigger1 = Vel Y > 0
+trigger1 = Pos Y >= 10
+value = 5100 ;Hit ground
+;-------------------------------------------------------------------------------
+;Effect Halo
+[Statedef 9082]
+type = A
+movetype = A
+physics = N
+ctrl = 0
+anim = 9081
+sprpriority = 5
+velset = 0,0
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = time = 0
+v = 0
+range = 0,1
+
+[State 1006, assert]
+type=assertspecial
+trigger1=1
+flag=noshadow
+ignorehitpause=1
+
+[State 0, BindToParent]
+type = BindToParent
+trigger1 = 1
+time = 1
+pos = 0, -25
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = var(0) = 0
+trigger1 = 1
+scale = .1+(.1*time),.1+(.1*time)
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = var(0) = 1
+trigger1 = 1
+scale = .01+(.1*time),.01+(.1*time)
+
+[State 0, AngleSet]
+type = AngleSet
+trigger1 = time = 0
+value = 0+(random%360)
+
+[State 0]
+type = trans
+trigger1 = 1
+trans = add
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = animtime  = 0
+;-------------------------------------------------------------------------------
+;Orb Highlights
+[Statedef 9083]
+type            = S
+movetype        = A
+physics         = S
+anim            = 9082
+ctrl            = 0
+poweradd        = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 10
+;---------------
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, PalFX]
+type = PalFX
+trigger1 =time = 5
+time=40
+sinadd=-255,-255,-255,100
+persistent = 1
+
+[State 0, BindToRoot]
+type = BindToParent
+trigger1 = Time =  1
+time = 1000
+pos = 0,0
+
+[State 7300, ]
+type = AngleAdd
+trigger1 = 1
+value = -18
+
+[State 7300, ]
+type = AngleDraw
+trigger1 = 1
+
+[State 7300, trans]
+type = Trans
+trigger1 = 1
+trans = add
+alpha = 256,256
+
+[State 1006, end]
+type=destroyself
+trigger1=numhelper(9077)=0
+
+[State 1006, end]
+type=destroyself
+trigger1=Parent,stateno != 9077
+;-------------------------------------------------------------------------------
+;Orb Trail
+[Statedef 9084]
+type            = S
+movetype        = A
+physics         = S
+anim            = 9084
+ctrl            = 0
+poweradd        = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 10
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 1010, 3]
+type = PlaySnd
+trigger1 = time = 0
+value = 3,20
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = time = 0
+v = 11
+range = 1,70
+ignorehitpause = 0
+persistent = 1
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Blue]
+type = PalFX
+trigger1 = var(11) = [1,10]
+;trigger1 = time = 0
+time = 10
+add = -104,-104,7
+mul = 256,256,256
+sinadd = 56,56,0,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Purple]
+type = PalFX
+trigger1 = var(11) = [11,20]
+;trigger1 = time = 0
+time = 10
+add = 0,-200,0
+mul = 256,256,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Red]
+type = PalFX
+trigger1 = var(11) = [21,30]
+;trigger1 = time = 0
+time = 10
+add = 0,-200,-200
+mul = 256,256,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Green]
+type = PalFX
+trigger1 = var(11) = [31,40]
+;trigger1 = time = 0
+time = 10
+add = 0,100,50
+mul = 20,120,24
+sinadd = 85,110,55,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Orange]
+type = PalFX
+trigger1 = var(11) = [41,50]
+;trigger1 = time = 0
+time = 10
+add = 40,-70,-200
+mul = 256,256,256
+sinadd = 40,30,0,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Yellow]
+type = PalFX
+trigger1 = var(11) = [51,60]
+;trigger1 = time = 0
+time = 10
+add = 240,100,0
+mul = 250,224,0
+sinadd = 110,55,85,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Cyan]
+type = PalFX
+trigger1 = var(11) = [61,70]
+;trigger1 = time = 0
+time = 10
+add = 10,-200,-50
+mul = 128,0,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = time = 0
+v = 12
+range = 1,10
+ignorehitpause = 0
+persistent = 1
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+
+[State 0, AngleSet]
+type = Angleadd
+trigger1 = var(12) = [1,5]
+trigger1 = timemod = 5,0
+value = 15
+ignorehitpause = 0
+persistent = 1
+
+[State 0, AngleSet]
+type = Angleadd
+trigger1 = var(12) = [6,10]
+trigger1 = timemod = 5,0
+value = -15
+ignorehitpause = 0
+persistent = 1
+
+[State 7300, trans]
+type = Trans
+trigger1 = 1
+trans = add
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = animtime = 0
+;-------------------------------------------------------------------------------
+;Orb Highlight
+[Statedef 9085]
+type            = S
+movetype        = A
+physics         = S
+anim            = 9083
+ctrl            = 0
+poweradd        = 0
+juggle          = 0
+facep2          = 0
+hitdefpersist   = 0
+movehitpersist  = 0
+hitcountpersist = 0
+sprpriority     = 10
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, PalFX]
+type = PalFX
+trigger1 =time = 5
+time=40
+sinadd=-255,-255,-255,100
+persistent = 1
+
+[State 0, BindToRoot]
+type = BindToParent
+trigger1 = Time =  1
+time = 1000
+pos = 0,0
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = time = 0
+v = 11
+range = 1,35
+ignorehitpause = 0
+persistent = 1
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Blue]
+type = PalFX
+trigger1 = var(11) = [1,5]
+;trigger1 = time = 0
+time = 10
+add = -104,-104,7
+mul = 256,256,256
+sinadd = 56,56,0,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Purple]
+type = PalFX
+trigger1 = var(11) = [6,10]
+;trigger1 = time = 0
+time = 10
+add = 0,-200,0
+mul = 256,256,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Red]
+type = PalFX
+trigger1 = var(11) = [11,15]
+;trigger1 = time = 0
+time = 10
+add = 0,-200,-200
+mul = 256,256,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Green]
+type = PalFX
+trigger1 = var(11) = [16,20]
+;trigger1 = time = 0
+time = 10
+add = 0,100,50
+mul = 20,120,24
+sinadd = 85,110,55,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Orange]
+type = PalFX
+trigger1 = var(11) = [21,25]
+;trigger1 = time = 0
+time = 10
+add = 40,-70,-200
+mul = 256,256,256
+sinadd = 40,30,0,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Yellow]
+type = PalFX
+trigger1 = var(11) = [26,30]
+;trigger1 = time = 0
+time = 10
+add = 240,100,0
+mul = 250,224,0
+sinadd = 110,55,85,10
+invertall = 0
+color = 128
+
+;Generated by Fighter Factory PalFX Editor
+[State 0, Cyan]
+type = PalFX
+trigger1 = var(11) = [31,35]
+;trigger1 = time = 0
+time = 10
+add = 10,-200,-50
+mul = 128,0,256
+sinadd = 40,80,40,10
+invertall = 0
+color = 128
+
+[State 7300, ]
+type = AngleAdd
+trigger1 = 1
+value = -18
+
+[State 7300, ]
+type = AngleDraw
+trigger1 = 1
+
+[State 7300, trans]
+type = Trans
+trigger1 = 1
+trans = add
+alpha = 256,256
+
+[State 1006, end]
+type=destroyself
+trigger1=numhelper(9077)=0
+
+[State 1006, end]
+type=destroyself
+trigger1=Parent,stateno != 9077
+;---------------------------------------------------------------------------
+[StateDef 9086]
+type = S
+physics = S
+ctrl = 0
+anim = 9079
+sprpriority = 10
+
+[State 0]
+type = AngleDraw
+trigger1 = 1
+scale = 0.5+(time/10.000),.45+(time/10.000)
+
+[State 0]
+type = Trans
+triggerall = time < 20
+trigger1 = 1
+trans = addalpha
+alpha = 250,256
+
+
+[State 0]
+type = Trans
+triggerall = time >= 20
+trigger1 = 1
+trans = addalpha
+alpha = 250-((time-20)*25),256
+
+[State 0]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0]
+type = Destroyself
+trigger1 = Time = 74

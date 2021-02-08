@@ -1,0 +1,1823 @@
+;===============================================================================
+;----------------------Supers-----------------------------------------------
+;===============================================================================
+;-------------------------------------------------------------------------------
+[StateDef 6030]
+type = S
+movetype= A
+physics = S
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 6030
+poweradd = -4000
+sprpriority = 0
+
+
+[State 0, Portrait]
+type = Helper
+trigger1 = time = 0
+helpertype = normal
+name = "Portrait"
+ID = 6033
+stateno = 6033
+pos = 160,-120
+postype = Left
+facing = 1
+keyctrl = 0
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+supermovetime = 999
+
+[State 3030, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+movetime = 100
+anim = -1
+sound = -1
+pos = 32,-80
+darken = 0
+unhittable = 1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = animelem = 2
+value = S5,25
+
+[State 6030, SuperPause]
+type = SuperPause
+trigger1 = AnimElem = 1
+time = 42
+anim = -1
+sound = s950,2
+darken = 1
+p2defmul = 0
+poweradd = 0
+unhittable = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 1
+anim = 7405
+ID = 7405
+pos = 0,-20
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove = 1
+pausemove = 1
+scale = 0.15,0.15
+sprpriority = 10
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 2
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 2
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 4,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 2
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = -4,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 2
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 8,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 2
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = -8,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 2
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 8,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 7
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 7
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 4,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 7
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = -4,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 7
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = -8,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 7
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 10,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 7
+anim = 6031
+ID = 6031
+pos = -10,-52
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = -10,-45
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove
+pausemove
+scale = 0.25,0.25
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 0,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 1
+size.yscale = 1
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -200,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.15
+size.yscale = 0.15
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 1
+size.yscale = 1
+
+[State 0, Helper]
+type = Helper
+trigger1 = Animelem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.65
+size.yscale = 0.65
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 56
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -2,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.35
+size.yscale = 0.35
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 60
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.45
+size.yscale = 0.45
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 45
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.45
+size.yscale = 0.45
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 60
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -70,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -25,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = TIME = 57
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 3,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -115,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 105,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 3,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 35,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 65,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -35,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -65,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = (random%5),-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = (random%5),-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = (random%2),-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 1
+size.yscale = 1
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = (random%2),-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.35
+size.yscale = 0.35
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = (random%5),-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -0,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 1
+size.yscale = 1
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 125,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -125,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.65
+size.yscale = 0.65
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 1
+size.yscale = 1
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -567,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -1,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 500,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -500,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = 400,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -400,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+
+[State 0, Helper]
+type = Helper
+trigger1 = AnimElem = 3
+helpertype = normal ;player
+name =
+ID = 6032
+stateno = 6032
+pos = -95,-500
+postype = p1 ;p2,front,back,left,right
+facing = 1
+keyctrl = 0
+ownpal = 0
+supermove
+pausemove
+size.xscale = 0.25
+size.yscale = 0.25
+
+
+[State 6030, end]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[StateDef 6032]
+type = S
+movetype= A
+physics = N
+ctrl = 0
+sprpriority = 5
+anim = 6032
+
+[state 0]
+type = angledraw
+trigger1 = 1
+scale = 1,1
+
+[state 0]
+type = angleadd
+trigger1 = 1
+value = 40
+
+[State 0]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 256,256
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = time = 0
+x = p2bodydist x/0+(random%10)
+y = p2bodydist y /35
+
+
+[state 0]
+type = envshake
+trigger1 = movecontact = 1
+ampl = 2
+time = 25
+
+
+
+[State 0]
+type = HitDef
+trigger1 = movecontact = 0
+attr = S, NA
+damage = 36,23
+animtype = Hard
+guardflag = MA
+hitflag = MAF
+priority = 3, Hit
+pausetime = 0,10
+ground.type = High
+sparkno = s253
+sparkxy = -0, -0
+hitsound = s0, 2
+ground.slidetime = 10
+ground.hittime  = 20
+ground.velocity = -3,-12
+airguard.velocity = -2,-2
+air.type = High
+air.velocity = -2,-2
+air.hittime = 20
+getpower = 0
+FALL = 1
+
+
+[State 0]
+type = Explod
+trigger1 = time = 50
+trigger2 = movecontact = 1
+anim = 253
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+removetime = -2
+ontop = 1
+scale = 0.25,0.25
+
+[State 0]
+type = Explod
+trigger1 = time = 50
+trigger2 = movecontact = 1
+anim = 253
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+removetime = -2
+ontop = 1
+scale = 0.25,0.25
+
+[State 0]
+type = Destroyself
+trigger1 = time = 50
+trigger2 = movecontact = 1
+;-------------------------------------------------------------------------------
+; Portrait
+[Statedef 6033]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim =6033
+sprpriority = -1
+
+[State 0, Negro]
+type = Explod
+trigger1 = time = 10
+anim = 7020
+ID = 6033
+pos = -300,-300
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = 80
+scale = 1,1
+sprpriority = -1
+ontop = 0
+ownpal = 1
+removeongethit = 1
+trans = add
+supermovetime = 999
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = root,pos y- 80
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = time < 10
+value = 1+time*25
+scale = .1+time*.05,.1+time*.05
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = time >= 10
+value = 0
+scale = .5,.5
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = time = [10,90]
+flag = nobardisplay
+flag2 = noBG
+flag3 = nomusic
+ignorehitpause = 1
+
+[State 0, BGPalFX]
+type = BGPalFX
+trigger1 = time > 10
+time = 2
+add = -256+var(12),-256+var(12),-256+var(12)
+ignorehitpause = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 12
+value = 6033
+
+[State 0, VarAdd]
+type = VarAdd
+triggerall = var(12) < 256
+trigger1 = time >= 90
+v = 12
+value = 25
+
+[State 0, Trans]
+type = Trans
+trigger1 = time >= 90
+trans = addalpha
+alpha = 256-var(12),256
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 100
+;-----------------------------------------------------------------------
+[StateDef 6040]
+type = S
+movetype= A
+physics = S
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 6040
+poweradd = -3000
+sprpriority = 0
+
+[State 0, Portrait]
+type = Helper
+trigger1 = time = 0
+helpertype = normal
+name = "Portrait"
+ID = 6044
+stateno = 6044
+pos = 160,-120
+postype = Left
+facing = 1
+keyctrl = 0
+ownpal = 1
+size.xscale = 1
+size.yscale = 1
+supermovetime = 999
+
+[State 3040, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+movetime = 100
+anim = -1
+sound = -1
+pos = 32,-80
+darken = 0
+unhittable = 1
+
+[State 6040,Helper]
+type = Helper
+trigger1 = time = 0
+helpertype = Normal
+id = 6042
+pos = 300,-25
+postype = back
+facing	= 1
+stateno	= 6042
+keyctrl	= 0
+ownpal	= 1
+supermovetime= 999
+ignorehitpause = 1
+size.xscale = 0.34
+size.yscale = 0.34
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = ANIMELEM = 2
+value = S0,16
+VOLUME = 50
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = TIME = 49
+value = S0,16
+VOLUME = 75
+
+[State 0, EnvShake]
+type = EnvShake
+triggerall = time >= 50
+trigger1 = time%7 = 0
+time = 4
+ampl = 6
+
+[State 0, Explod]
+type = Explod
+trigger1 = TIME = 0
+anim = 7405
+ID = 7405
+pos = -2,-15
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove = 1
+pausemove = 1
+scale = 1.75,1.75
+sprpriority = 7
+
+
+
+[State 6040, SuperPause]
+type = SuperPause
+trigger1 = TIME = 0
+time = 48
+anim = -1
+MOVETIME = 48
+sound = S950,2
+darken = 1
+p2defmul = 0
+poweradd = 0
+unhittable = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = TIME = 0
+trigger2 = animelem = 2
+TRIGGER3 = ANIMELEM = 4
+anim = 199
+ID = 199
+pos = 0,-20
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = -2
+supermove = 1
+pausemove ´= 1
+scale = 2.30,2.30
+sprpriority = 25
+
+
+[State 0, RemoveExploD]
+type = RemoveExplod
+trigger1 = animelem = 4
+id = 7023
+
+[State 0, RemoveExploD]
+type = RemoveExplod
+trigger1 = animelem = 4
+id = 7022
+
+[State 0, RemoveExploD]
+type = RemoveExplod
+trigger1 = animelem = 4
+id = 550
+
+
+
+[State 0]
+type = Explod
+trigger1 = animelem = 1
+trigger2 = animelem =2
+anim = 7023
+ID = 7023
+pos = 17,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+removetime = -1
+scale = .70,.55
+sprpriority = 0
+ontop = 1
+ownpal = 1
+removeongethit = 1
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 1
+trigger2 = animelem = 2
+anim = 7022
+ID = 7022
+pos = -17,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+removetime = -1
+scale = .70,.55
+sprpriority = 0
+ontop = 1
+ownpal = 1
+removeongethit = 1
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 1
+anim = 550
+ID = 550
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+removetime = -1
+scale = .75,.55
+sprpriority = 0
+ontop = 1
+ownpal = 1
+removeongethit = 1
+supermove = 1
+
+[State 6040, 1]
+type = HitDef
+trigger1 = hitcount<75
+attr = S, NA
+damage = 5,2
+animtype = Hard
+guardflag = MA
+hitflag = MAFDE
+priority = 3, Hit
+pausetime = 2,2
+sparkno = -1
+sparkxy = -10, -16
+hitsound = -1
+guardsound = -1
+ground.type = High
+ground.slidetime = 5
+ground.hittime  = 5
+ground.velocity = -16,-0.50
+airguard.velocity = -1.9,-.8
+air.type = High
+air.velocity = -0.25,-1.30
+air.hittime = 15
+fall = 1
+fall.recover =0
+envshake.time = 4
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Unguardable
+
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 2
+trigger2 = animelem = 4
+value = S530,3
+
+[State 0, PlaySnd]
+type = PlaySnd
+triggerall = time>3
+triggerall = time<135
+trigger1 = timemod = 6,0
+value = S0,555
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 50
+value = S5,12
+
+[State 0, PlaySnd]
+type = PlaySnd
+triggerALL = time >= 50
+TRIGGERALL = TIME<120
+TRIGGER1 = TIMEMOD = 4,0
+value = S0,311
+
+
+[State 0]
+type = Helper
+triggerall = time >= 49
+triggerall = time < 125
+trigger1 = timemod = 3,0
+helpertype = normal
+name = "Effect"
+ID = 6041
+stateno = 6041
+pos = 0,-15
+postype = p1
+supermovetime = 65
+
+
+[State 6040, end]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+;-----------------------------------------------------------------------
+[StateDef 6041]
+type = S
+physics = S
+ctrl = 0
+anim = 6041
+sprpriority = 10
+
+[State 0]
+type = AngleDraw
+trigger1 = 1
+scale = 0+(time/2.000),0+(time/2.000)
+
+
+
+
+
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 250-(time*4),256
+
+[State 0]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0]
+type = Destroyself
+trigger1 = Time = 20
+;-----------------------------------------------------------------------
+[Statedef 6042]
+type    = A
+physics = N
+velset = 0,0
+anim = 6042
+ctrl = 0
+sprpriority = 3
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = time >= 0
+x = 1
+
+[State 6042, 2]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 6042]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha =256-(time*6),256
+
+
+[State 6042, DestroySelf]
+type = DestroySelf
+trigger1 = time = 55
+;-----------------------------------------------------------------------
+; Portrait
+[Statedef 6044]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim =6044
+sprpriority = -1
+
+[State 0, Negro]
+type = Explod
+trigger1 = time = 10
+anim = 7020
+ID = 6044
+pos = -300,-300
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = 80
+scale = 1,1
+sprpriority = -1
+ontop = 0
+ownpal = 1
+removeongethit = 1
+trans = add
+supermovetime = 999
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = root,pos y- 80
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = time < 10
+value = 1+time*25
+scale = .1+time*.05,.1+time*.05
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = time >= 10
+value = 0
+scale = .5,.5
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = time = [10,90]
+flag = nobardisplay
+flag2 = noBG
+flag3 = nomusic
+ignorehitpause = 1
+
+[State 0, BGPalFX]
+type = BGPalFX
+trigger1 = time > 10
+time = 2
+add = -256+var(12),-256+var(12),-256+var(12)
+ignorehitpause = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 12
+value = 6033
+
+[State 0, VarAdd]
+type = VarAdd
+triggerall = var(12) < 256
+trigger1 = time >= 90
+v = 12
+value = 25
+
+[State 0, Trans]
+type = Trans
+trigger1 = time >= 90
+trans = addalpha
+alpha = 256-var(12),256
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 100

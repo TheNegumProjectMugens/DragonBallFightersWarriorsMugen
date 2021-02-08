@@ -1,0 +1,22 @@
+[Info]
+name="FusedZamasu"
+displayname="Fused Zamasu"
+versiondate=26/12/2017
+mugenversion=1.0
+author="BlueStoneW"
+pal.defaults=1
+[Files]
+sprite=FusedZamasu.sff
+sound=FusedZamasu.snd
+anim=FusedZamasu.air
+cmd=FusedZamasu.cmd
+cns=FusedZamasu.cns
+st=FusedZamasu.cns
+stcommon=common1.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

@@ -1,0 +1,23 @@
+[Info]
+name="Frost"
+displayname="Frost"
+versiondate=29/05/2018
+mugenversion=1.0
+author="Planeptune"
+pal.defaults=1,2
+[Files]
+sprite=Frost.sff
+sound=Frost.snd
+anim=Frost.air
+cmd=Frost.cmd
+cns=Frost.cns
+st=Frost.cns
+st1=Ai.cns
+stcommon=common1.cns
+pal1=Frost.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;Sprite sheet by mmaker45
+;Voices by Knightmare
+;Code Base by Mikel88888

@@ -1,0 +1,24 @@
+[Info]
+name ="Zamasu"
+displayname ="Zamasu"
+versiondate =12/09/2017
+mugenversion =1.0
+author ="Knightmare"
+pal.defaults =1
+
+[Files]
+sprite =Zamasu.sff
+anim =Zamasu.air
+sound =Zamasu.snd
+cmd =Zamasu.cmd
+cns =Zamasu.cns
+stcommon =common1.cns
+st =Zamasu.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard =

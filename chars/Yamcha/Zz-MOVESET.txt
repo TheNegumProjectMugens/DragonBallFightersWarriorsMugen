@@ -1,0 +1,36 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+COMBOS:
+
+a,a,a,a - Combo 1
+
+b,b - Combo 2
+
+b,b,b,a - Air
+
+a,a,a,b,b,b,b,b,a - Full
+
+SPECIALS:
+
+D,DF,F,a - Neo Wolf Fang Fist
+
+D,DB,B,a - Fake Death
+
+D,DF,F,b - Wild Instinct
+
+D,DB,B,b - Soukidan
+
+D,DF,F,c - Kamehameha
+
+D,DB,B,c - Ki Blitz
+
+SUPER: 
+
+x - Super Soukidan

@@ -1,0 +1,25 @@
+[Info]
+name ="Kefura"
+displayname ="Kefla"
+versiondate =07/02/2018
+mugenversion =1.0
+author ="Knightmare,Planeptune"
+pal.defaults =1
+
+[Files]
+sprite =Kefla.sff
+anim =Kefla.air
+sound =Kefla.snd
+cmd =Kefla.cmd
+cns =Kefla.cns
+stcommon =common1.cns
+st =Kefla.cns
+pal1=1.act
+st1=IA.cns
+st2=SSJ.cns
+st3=Specials.cns
+st4=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

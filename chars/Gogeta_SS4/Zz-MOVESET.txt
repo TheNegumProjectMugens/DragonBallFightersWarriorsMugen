@@ -1,0 +1,40 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+D+B - Launcher
+
+COMBOS:
+
+a,a,a,a - Combo 1
+
+b,b,b,b,b,b - Combo 2
+
+b,b,a,a,a - Air Combo
+
+a,a,a,a,b,b,b,b,b,b,b,b,a,a,a - Full Combo
+
+SPECIALS:
+
+D,DF,F,a - Energy Force Palm
+
+D,DB,B,a - Super Explosive Wave
+
+D,DF,F,b - Crimson Rush
+
+D,DB,B,b - Vanisher Guard
+
+D,DF,F,c - Super Kamehameha (hold c for Joke Kamehameha)
+
+D,DB,B,c - Big Bang Attack
+
+D+c - Big Bang Kamehameha
+
+SUPER: 
+
+x - Big Bang Kamehameha x100

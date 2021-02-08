@@ -1,0 +1,30 @@
+; ADD004 BASIC PIEs ReBuilded DEF (14/01/2018)
+;==============================================
+; This file is Made by PIE.
+; there is a backup of this file in the same folder, named "<samename>.a4bk".
+; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
+;==============================================
+
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+[Info]
+name ="Frieza Golden"
+displayname ="Frieza Golden"
+versiondate =07/08/2017
+mugenversion =1.0
+author ="Mikel8888 (edit by InSeph)"
+pal.defaults =1
+[Files]
+sprite =FriezaGolden.sff
+anim =FriezaGolden.air
+sound =FriezaGolden.snd
+cmd =FriezaGolden.cmd
+cns=add004basic.reb1
+st=add004basic.reb1
+stcommon=common1.cns
+pal1=1.act
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

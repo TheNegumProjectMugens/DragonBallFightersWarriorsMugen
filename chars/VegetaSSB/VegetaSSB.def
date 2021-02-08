@@ -1,0 +1,24 @@
+[Info]
+name = "Vegeta"
+displayname = "Vegeta SSB"
+versiondate = 20/08/2017
+mugenversion = 1.0
+author = "InSeph"
+pal.defaults = 1
+
+[Files]
+sprite = VegetaSSB.sff
+anim = VegetaSSB.air
+sound = VegetaSSB.snd
+cmd = VegetaSSB.cmd
+cns = VegetaSSB.cns
+stcommon = common1.cns
+st = VegetaSSB.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

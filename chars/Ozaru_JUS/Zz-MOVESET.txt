@@ -1,0 +1,26 @@
+
+A - Weak Hit
+
+B - Strong Hit
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Gorilla Press
+
+D,DB,B,a - Super Explosive Wave
+
+D,DF,F,b - Rock Throw
+
+D,DB,B,b - Gorilla Catch
+
+D,DF,F,c - Chou Makouhou
+
+D,DB,B,c - Chou Makouhou Barrage
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Ultimate Chou Makouhou

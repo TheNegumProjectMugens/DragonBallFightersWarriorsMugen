@@ -1,0 +1,24 @@
+[Info]
+name="Kale"
+displayname="Kale"
+versiondate=11/03/2018
+mugenversion=1.0
+author="Planeptune"
+pal.defaults=1,2
+[Files]
+sprite=KaleSSJC.sff
+sound=KaleSSJC.snd
+anim=KaleSSJC.air
+cmd=KaleSSJC.cmd
+cns=KaleSSJC.cns
+st=KaleSSJC.cns
+stcommon=common1.cns
+pal1=KaleSSJC.act
+pal2=KaleSSJC2.act
+st1=AI.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;Credits: Sprite Kale ssj base by lasersprite, Sprite kale Normal base by Martin720
+;Voices by knightmare, some effects by rivelio, code base by mikel8888
+

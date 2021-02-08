@@ -1,0 +1,42 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Gohan"
+displayname ="Gohan"
+versiondate =02/04/2017
+mugenversion =1.0
+author ="keyber"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite =Gohan_Jus_SSJ1.sff
+anim =Gohan_Jus_SSJ1.air
+sound =Gohan_Jus_SSJ1.snd
+cmd =Gohan_Jus_SSJ1.cmd
+cns =Gohan_Jus_SSJ1.cns
+stcommon =common1.cns
+st =Gohan_Jus_SSJ1.cns
+pal1=1.act
+pal2=2.act
+pal3=1.act
+pal4=2.act
+pal5=1.act
+pal6=2.act
+pal7=1.act
+pal8=2.act
+pal9=1.act
+pal10=2.act
+pal11=1.act
+pal12=2.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+st4=SS1.cns
+st5=SS2.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

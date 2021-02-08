@@ -1,0 +1,40 @@
+[Info]
+name ="Vegeta"
+displayname ="Vegeta"
+versiondate =02/04/2017
+mugenversion =1.0
+author ="Mikel8888 ; edited by viniciusonico ; edited by Koshigaya"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite =Vegeta.sff
+anim =Vegeta.air
+sound =Vegeta.snd
+cmd =Vegeta.cmd
+cns =Vegeta.cns
+stcommon =common1.cns
+st =Vegeta.cns
+pal1=1.act
+pal2=2.act
+pal3=1.act
+pal4=2.act
+pal5=1.act
+pal6=2.act
+pal7=1.act
+pal8=2.act
+pal9=3.act
+pal10=2.act
+pal11=1.act
+pal12=2.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+st4=SS1.cns
+st5=SS2.cns
+st6=SSG.cns
+st7=SSB.cns
+st8=SSB ascend.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

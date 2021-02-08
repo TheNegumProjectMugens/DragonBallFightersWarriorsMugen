@@ -1,0 +1,32 @@
+
+A - Punch
+
+B - Kick
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Ki Liberation
+
+D,DB,B,a - Taiyoken
+
+F,DF,D,DB,B,a - Explosive Wave
+
+D,DF,F,b - Full Power
+
+D,DB,B,b - Shunkan Ido
+
+D,DF,F,c - Kamehamehax10
+
+D,DB,B,c - Super Energy Blast
+
+B,DB,D,DF,F,c - Super Kamehameha
+
+F,DF,D,DB,B,c - Instant Kamehameha
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Ryu Ken

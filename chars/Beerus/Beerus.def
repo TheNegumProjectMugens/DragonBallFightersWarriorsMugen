@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "God of Destruction Beerus"
+displayname = "Lord Beerus"
+versiondate = 30/04/2018
+mugenversion = 1.0
+author = "InSeph, edited by Shiruzato/MYTHOS"
+pal.defaults = 1
+
+[Files]
+sprite = Beerus.sff
+anim = Beerus.air
+sound = Beerus.snd
+cmd = Beerus.cmd
+cns = Beerus.cns
+stcommon = common1.cns
+st = Beerus.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

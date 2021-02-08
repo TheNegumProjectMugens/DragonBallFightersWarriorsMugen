@@ -1,0 +1,31 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Android 18"
+displayname ="Android 18"
+versiondate =03/12/2017
+mugenversion =1.0
+author ="Danazodd"
+pal.defaults =1,2
+
+[Files]
+sprite =Android_18.sff
+anim =Android_18.air
+sound =Android_18.snd
+cmd =Android_18.cmd
+cns =Android_18.cns
+stcommon =common1.cns
+st =Android_18.cns
+pal1=1.act
+pal2=2.act
+st1=IA.cns
+st2=Helpers.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 
+                                                                                                                                          

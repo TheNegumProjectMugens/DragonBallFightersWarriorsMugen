@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Vegeta SSGSS"
+displayname ="Vegeta"
+versiondate =13/11/2017
+mugenversion =1.0
+author ="Knightmare"
+pal.defaults =1,2,3,4,5,6
+
+[Files]
+sprite =Vegeta_SSGSS.sff
+anim =Vegeta_SSGSS.air
+sound =Vegeta_SSGSS.snd
+cmd =Vegeta_SSGSS.cmd
+cns =Vegeta_SSGSS.cns
+stcommon =common1.cns
+st =Vegeta_SSGSS.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,78 @@
+
+A - Light Combo
+
+B - Heavy Combo
+
+C - Ki Blast
+
+S - Power Charge
+
+D+B - Launcher
+
+COMBOS:
+
+Base Form:
+
+a,a,a,a,a - Light
+
+b,b,b - Heavy
+
+a,b,b - Air
+
+a,a,a,a,b,b,b,a,a,b,b - Full
+
+Super Saiyan Rose:
+
+a,a,a,a,a,a - Light
+
+b,b,b,b,b,b - Heavy
+
+a,a,a,a,b,b - Air
+
+a,a,a,b,b,b,b,b,b,a,a,a,a,b,b - Full
+
+SPECIALS:
+
+Base Form:
+
+D,DF,F,a - Shockwave
+
+D,DB,B,a - Super Explosive Wave
+
+D,DF,F,b - Aura Slide
+
+D,DB,B,b - Shunkan Ido
+
+D,DF,F,c - Black Kamehameha
+
+D,DB,B,c - Super Energy Wave Volley
+
+D+a - Super Saiyan Rose
+
+Super Saiyan Rose
+
+D,DF,F,a - Divine Retribution - Death Bomb
+
+D,DB,B,a - Sudden Death Cut
+
+D,DF,F,b - Divine Fury
+
+D,DB,B,b - Divine Retribution - Judgement Slash
+
+D,DF,F,c - Super Black Kamehameha Rose
+
+D,DB,B,c - Rising Severence
+
+D+S - Base Form
+
+SUPERS: 
+
+Base Form:
+
+D+c - Super Black Kamehameha
+
+Super Saiyan Rose:
+
+D+c - Divine Lasso
+
+x - Violent Fierce God Slicer

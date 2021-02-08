@@ -1,0 +1,762 @@
+;===============================================================================
+;---------------------------------ZENKAI SYSTEM---------------------------------
+;===============================================================================
+; (ES): El Zenkai System es una mecánica que toma las habilidades de un
+; personaje y las lleva al límite, obteniendo mejoras en sus estádisticas
+; y desbloqueando nuevos Specials y/o Supers exclusivos de este estado. Además, 
+; otorga una habilidad única a cada personaje. Este Power-Up, sin embargo,
+; es temporal, por lo que debe aprovecharse al máximo durante su activación.
+; Al llegar a su fin, tiene un tiempo de recarga antes de poder ser usado
+; nuevamente.
+
+; (EN): The Zenkai System is a mechanic that takes a character's traits and 
+; puts them into overdrive, gaining boosts in their stats and unlocking new Specials 
+; and/or Supers exclusive to this state. It also grants a special skill unique to 
+; each character. However, this Power-Up is only temporary, So one should take
+; full advantage during its activacion.
+; When it comes to an end, it has a recharge period before it can be used again.
+;-------------------------------------------------------------------------------
+
+;-------------------------------------------------------------------------------
+; Namekian Regen - Start
+[Statedef 2000]
+type    = S
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 2000
+poweradd = -2500
+sprpriority = 2
+
+[State 0, EnvShake]
+type = EnvShake
+trigger1 = time = 22
+time = 15
+
+; SOUNDS ============
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,32
+VolumeScale = 100
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,32
+VolumeScale = 100
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,32
+VolumeScale = 100
+;====================
+
+[State 0, ZENKAI Activado]
+type = Helper
+trigger1 = time = 14
+helpertype = Normal
+name = "ZENKAI Activado"
+ID = 2010
+stateno = 2010
+pos = 999,999
+postype = p1
+ownpal = 1
+
+;------------------------------------------------
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = Time = 0
+time = 30
+movetime = 30
+anim = -1
+sound = -1
+pos = 32,-80
+darken = 0
+unhittable = 1
+
+[State 3000, VarSet]
+type = Varset
+trigger1 = time = 0
+v = 12
+value = -100
+
+[State 3000, VarSet]
+type = Varset
+trigger1 = time = 40
+v = 12
+value = 0
+
+[State 3000, VarAdd]
+type = VarAdd
+trigger1 = time >= 30 && Var(12) < 0
+v = 12
+value = 6
+
+[State 3000, BGColorFX]
+type = BGPalFX
+trigger1 = Time > 0
+time = 1
+add = Var(12),Var(12),Var(12)
+
+;------------------------------------------------
+
+[State 0, Activation FX Charge]
+type = Explod
+trigger1 = Time = 0
+anim = 2012
+ID = 005
+pos = -0*Helper(999999),Fvar(16),-25*Helper(999999),Fvar(16)
+scale = .3*Helper(999999),Fvar(16),.3*Helper(999999),Fvar(16)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+accel = 0,0
+random = 0,0
+removetime = -2
+ontop = 0
+sprpriority = 2
+removeongethit = 1
+supermove = 999
+supermovetime = 999
+pausemove = 999
+pausemovetime = 999
+Trans = Add
+
+[State 0, Activation FX ON]
+type = Explod
+trigger1 = Time = 14
+anim = 2013
+ID = 005 
+pos = -0*Helper(999999),Fvar(16),-25*Helper(999999),Fvar(16)
+scale = .5*Helper(999999),Fvar(16),.5*Helper(999999),Fvar(16)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+accel = 0,0
+random = 0,0
+removetime = -2
+ontop = 1
+sprpriority = 2
+removeongethit = 1
+supermove = 999
+supermovetime = 999
+pausemove = 999
+pausemovetime = 999
+Trans = Add
+
+[State 0, Viento]
+type = Explod
+trigger1 = Time = 14
+anim = 2014
+ID = 001
+pos = -15*Helper(999999),Fvar(16),1*Helper(999999),Fvar(16)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .3*Helper(999999),Fvar(16),.4*Helper(999999),Fvar(16)
+sprpriority = 1
+ontop = 1
+ownpal = 1
+removeongethit = 1
+supermovetime = 999
+
+[State 0, Viento]
+type = Explod
+trigger1 = Time = 14
+anim = 2014
+ID = 001
+pos = 10*Helper(999999),Fvar(16),1*Helper(999999),Fvar(16)
+postype = p1
+facing = -1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .3*Helper(999999),Fvar(16),.4*Helper(999999),Fvar(16)
+sprpriority = 1
+ontop = 1
+ownpal = 1
+removeongethit = 1
+supermovetime = 999
+
+[State 200, End]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------------------------------------------
+; Namekian Regen - End
+[Statedef 2005]
+type    = S
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 2005
+sprpriority = 2
+
+[State 5210, 1] ;Blink black
+type = PalFX
+trigger1 = Time = 0
+time = 5
+add = -128,-128,-128 ;256,256,256
+
+; SOUNDS ============
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,26 ;26,27
+volumescale = 100
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,26
+volumescale = 100
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S0,26
+volumescale = 100
+;====================
+
+[State 0, EnvShake]
+type = EnvShake
+trigger1 = Time = 0
+time = 5
+
+[State 0, ZENKAI Desactivado]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "ZENKAI Desactivado"
+ID = 2015
+stateno = 2015
+pos = 999,999
+postype = p1
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 200, End]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------------------------------------------
+; ZENKAI - On
+[Statedef 2010]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim = 9999
+sprpriority = -1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,2
+volume = 999
+channel = 2
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 900 ;Tiempo de Duración: 15 Segundos (900 Ticks)
+trigger2 = NumHelper (2015) = 1
+
+;-------------------------------------------------------------------------------
+; ZENKAI - Off
+[Statedef 2015]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim = 9999
+sprpriority = -1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,5
+volume = 999
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,5
+volume = 999
+
+[State 200, End]
+type = DestroySelf
+trigger1 = time = 600 
+;Tiempo de Recarga: 10 Segundos (600 Ticks)
+;Igualar tiempo a la duración del Helper 2020 (IA.cns)
+
+;-------------------------------------------------------------------------------
+; ZENKAI - Recharged!
+[Statedef 2020]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim = 9999
+sprpriority = -1
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,10
+volume = 999
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,10
+volume = 999
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 5
+
+;===============================================================================
+; Healing Factor - Start
+[Statedef 2025]
+type    = S
+movetype= I
+physics = S
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 2025
+sprpriority = 2
+
+[State 5210, 1] ;Blink yellow
+type = PalFX
+TriggerAll = Time >= 8
+Trigger1 = Time%5
+time = 10
+add = 32,64,32 ;256,256,256
+
+; SOUNDS ============
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 5
+value = S0,43
+volumescale = 100
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 5
+value = S0,43
+volumescale = 100
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 5
+value = S10,34
+volumescale = 100
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 5
+value = S10,34
+volumescale = 100
+
+[State 0, PlaySnd]
+type = PlaySnd
+triggerall = time >= 15
+trigger1 = timemod = 170,0
+trigger2 = time = 15
+value = S10,10
+volumescale = 100
+channel = 7
+[State 0, PlaySnd]
+type = PlaySnd
+triggerall = time >= 15
+trigger1 = timemod = 170,0
+trigger2 = time = 15
+value = S10,10
+volumescale = 100
+channel = 8
+;====================
+
+[State 0, LifeAdd]
+type = LifeAdd
+triggerall = time >= 8
+trigger1 = 1
+value = 2
+[State 0, PowerAdd]
+type = PowerAdd
+triggerall = time >= 8
+trigger1 = 1
+value = -20
+
+[State 0, EnvShake]
+type = EnvShake
+triggerall = Time >= 8
+trigger1 = time%5 = 0
+time = 5
+ampl = -3
+
+[State 0, Healing Aura]
+type = Helper
+trigger1 = Time = 8
+helpertype = normal
+name = "Healing Aura"
+ID = 2030
+stateno = 2030
+pos = 0,0
+postype = p1
+ownpal = 1
+
+[State 0, Green Wave]
+type = Helper
+TriggerAll = Time >= 8
+trigger1 = TimeMod = 20,0
+helpertype = normal
+name = "Green Wave"
+ID = 2027
+stateno = 2027
+postype = p1
+ownpal = 1
+pos = 0,-25*Helper(999999),FVar(16)
+
+[State 200, End]
+type = ChangeState
+Triggerall = ailevel = 0
+triggerall = time >= 12
+trigger1 = command != "hold_x"
+trigger2 = Life = LifeMax
+trigger3 = Power <= 0
+value = 2026
+
+;-------------------------------------------------------------------------------
+; Healing Factor - End
+[Statedef 2026]
+type    = S
+movetype= I
+physics = S
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 2026
+sprpriority = 2
+
+;---------------------
+[State 0, StopSnd]
+type = StopSnd
+trigger1 = Time = 0
+channel = 7
+[State 0, StopSnd]
+type = StopSnd
+trigger1 = Time = 0
+channel = 8
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = pos y > 0
+y = 0
+
+[State 0, StateTypeSet]
+type = StateTypeSet
+trigger1 = pos y = 0
+statetype = S
+movetype = I
+physics = S
+;---------------------
+
+[State 200, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------------------------------------------
+; Green Wave
+[Statedef 2027]
+type    = A
+movetype= I
+physics = N
+anim = 2015
+sprpriority = 3
+
+[State 0, PalFXWiz]
+type = PalFX
+trigger1 = 1
+time = 99999
+add = 0,0,0
+mul = 150,275,0
+sinadd = 0,0,0,1
+invertall = 0
+color = 0
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = .35+time*.005,.45+time*.005
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; Healing Aura - Start
+[Statedef 2030]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 2030
+sprpriority = 3
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+pos = 3,-25*Helper(999999),Fvar(16)
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+scale = .3*Helper(999999),Fvar(16),.3*Helper(999999),Fvar(16)
+value = 0+(time*2.5)
+ignorehitpause = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 256,256
+
+[State 200, End]
+type = Destroyself
+trigger1 = root,movetype = H
+
+[State 200, End]
+type = Changestate
+trigger1 = root,stateno != 2025
+value = 2031
+
+;-------------------------------------------------------------------------------
+; Healing Aura - End
+[Statedef 2031]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+sprpriority = 4
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+scale = .3*Helper(999999),Fvar(16),.3*Helper(999999),Fvar(16)
+ignorehitpause = 1
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+pos = 3,-25*Helper(999999),Fvar(16)
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 200-(time*20),256
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 10
+trigger2 = root,movetype = H
+
+;-------------------------------------------------------------------------------
+; Wild Aura
+[Statedef 2500]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 9999
+sprpriority = 3
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+pos = 0*Helper(999999),Fvar(16),0
+
+[State 0, Blue Wild Aura FX ADD1]
+type = Explod
+trigger1 = (GameTime%2)=0
+anim = 2011
+ID = 001
+pos = IfElse(root,statetype = L,30*Helper(999999),Fvar(16)-Random%60*Helper(999999),Fvar(16),6*Helper(999999),Fvar(16)-Random%12*Helper(999999),Fvar(16)),IfElse(root,stateno = 5110,5*Helper(999999),Fvar(16)-Random%10*Helper(999999),Fvar(16),-5*Helper(999999),Fvar(16)-Random%35*Helper(999999),Fvar(16))
+scale = .25*Helper(999999),Fvar(16),.20*Helper(999999),Fvar(16)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+accel = 0,0
+random = 0,0
+removetime = -2
+removeongethit = 1
+sprpriority = 0
+ontop = 0
+supermove = 999
+supermovetime = 999
+pausemove = 999
+pausemovetime = 999
+trans = addalpha
+alpha = 175,256
+
+[State 0, Deep Blue Wild Aura FX ADD1]
+type = Explod
+trigger1 = (GameTime%2)=0
+anim = 2010
+ID = 001
+pos = IfElse(root,statetype = L,30*Helper(999999),Fvar(16)-Random%60*Helper(999999),Fvar(16),6*Helper(999999),Fvar(16)-Random%12*Helper(999999),Fvar(16)),IfElse(root,stateno = 5110,5*Helper(999999),Fvar(16)-Random%10*Helper(999999),Fvar(16),-5*Helper(999999),Fvar(16)-Random%35*Helper(999999),Fvar(16))
+scale = .25*Helper(999999),Fvar(16),.20*Helper(999999),Fvar(16)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+accel = 0,0
+random = 0,0
+removetime = -2
+removeongethit = 1
+sprpriority = -1
+ontop = 0
+supermove = 999
+supermovetime = 999
+pausemove = 999
+pausemovetime = 999
+trans = addalpha
+alpha = 256,256
+
+[State 0, Deep Blue Wild Aura FX ADD2]
+type = Explod
+trigger1 = (GameTime%2)=0
+anim = 2010
+ID = 001
+pos = IfElse(root,statetype = L,30*Helper(999999),Fvar(16)-Random%60*Helper(999999),Fvar(16),6*Helper(999999),Fvar(16)-Random%12*Helper(999999),Fvar(16)),IfElse(root,stateno = 5110,5*Helper(999999),Fvar(16)-Random%10*Helper(999999),Fvar(16),-5*Helper(999999),Fvar(16)-Random%35*Helper(999999),Fvar(16))
+scale = .25*Helper(999999),Fvar(16),.20*Helper(999999),Fvar(16)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = -1
+accel = 0,0
+random = 0,0
+removetime = -2
+removeongethit = 1
+sprpriority = -1
+ontop = 1
+supermove = 999
+supermovetime = 999
+pausemove = 999
+pausemovetime = 999
+trans = addalpha
+alpha = 25,256
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = addalpha
+alpha = 256,256
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = root,stateno = 5110
+trigger2 = root,stateno = 181 && root,time >= 35
+id = 005
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = root,stateno = 2025 && root,time >= 8
+trigger2 = root,stateno = 2026 && root,time <= 15
+id = 001
+
+[State 200, End]
+type = Destroyself
+trigger1 = Root,Var(50)=0
+trigger2 = root, life = 0
+
+;-------------------------------------------------------------------------------
+; Wild Particles
+[Statedef 2550]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 9999
+sprpriority = 3
+
+[State 0, BindToRoot]
+type = BindToRoot
+trigger1 = 1
+pos = 0*Helper(999999),Fvar(16),0
+
+[State 0, True Blue Sparks]
+Type = Explod
+trigger1 = timemod = 2,0
+Anim = 566
+ID = 565
+Pos = (Random%25*Helper(999999),Fvar(16))*IfElse(Random < 500,-1,1),-25+(Random%30*Helper(999999),Fvar(16))*IfElse(Random < 500,-1,1)
+PosType = P1
+Vel = Random%100*IfElse(Random <= 500,0.01*(Random%2),-0.01*(Random%2)), -0.5
+Accel = 0.00,-0.1 - 0.01*(Random%4)
+Scale = 0.05*Helper(999999),Fvar(16), 0.05*Helper(999999),Fvar(16)
+OnTop = IfElse(Random <= 500,0,1)
+OwnPal = 1
+IgnoreHitPause = 1
+SuperMoveTime = 999
+Angle = 0+Random%180
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = Root,Var(50)=0
+trigger2 = root, Life = 0

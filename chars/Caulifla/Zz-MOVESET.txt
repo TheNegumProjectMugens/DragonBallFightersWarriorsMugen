@@ -1,0 +1,118 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+FORMS:
+(note: hold the combination of buttons listed when
+selecting the character to start the match in that form)
+
+a - Base form
+
+S+a - Super Saiyan 1
+
+S+b - Super Saiyan 2
+
+COMBOS:
+
+Base Form:
+
+a,a,a - Combo 1
+
+b,b,b - Combo 2
+
+b,a - Air
+
+a,a,a,b,b,b,Jump,b,a- Full
+
+Super Saiyan:
+
+a,a,a,a,a - Combo 1
+
+b,b,b,b,b - Combo 2
+
+b,b,a - Air
+
+a,a,a,a,a,b,b,b,b,b,Jump,b,b,a - Full
+
+Super Saiyan 2:
+
+a,a,a,a,a,a,a - Combo 1
+
+b,b,b,b,b,b,b,b,b - Combo 2
+
+b,b,b,a - Air
+
+a,a,a,a,a,a,a,b,b,b,b,b,b,b,b,Jump,b,b,b,a - Full
+
+SPECIALS:
+
+Base Form:
+
+D,DF,F,a - Kiai
+
+D,DB,B,a - Explosive Wave
+
+D,DF,F,b - Feint
+
+D,DB,B,b - Crush Ball
+
+D,DF,F,c - Crush Beam
+
+D,DB,B,c - Crush Barrage
+
+D+a - Super Saiyan
+
+D+F+a - Super Saiyan 2
+
+Super Saiyan:
+
+D,DF,F,a - Kiai
+
+D,DB,B,a - Explosive Wave
+
+D,DF,F,b - Full-Speed Assault
+
+D,DB,B,b - Crush Ball
+
+D,DF,F,c - Crush Beam
+
+D,DB,B,c - Crush Barrage
+
+D+a - Super Saiyan 2
+
+D+s - Base Form
+
+Super Saiyan 2:
+
+D,DF,F,a - Kiai
+
+D,DB,B,a - Super Explosive Wave
+
+D,DF,F,b - Full-Speed Assault
+
+D,DB,B,b - Crush Ball
+
+D,DF,F,c - Crush Blast
+
+D,DB,B,c - Super Crush Cannon
+
+D+s - Base Form
+
+SUPER: 
+
+Base Form:
+
+x - Crush Cannon
+
+Super Saiyan:
+
+x - Super Crush Beam
+
+Super Saiyan 2:
+
+x - The Final Ace

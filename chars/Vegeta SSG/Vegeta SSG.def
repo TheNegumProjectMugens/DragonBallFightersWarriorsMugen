@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Vegeta"
+displayname = "Vegeta SSG"
+versiondate = 13/11/2017
+mugenversion = 1.0
+author = "Salah"
+pal.defaults = 1
+
+[Files]
+sprite = Vegeta SSG.sff
+anim = Vegeta SSG.air
+sound = Vegeta SSG.snd
+cmd = Vegeta SSG.cmd
+cns = Vegeta SSG.cns
+stcommon = common1.cns
+st = Vegeta SSG.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

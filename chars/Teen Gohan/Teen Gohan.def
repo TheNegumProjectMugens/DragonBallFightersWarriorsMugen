@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Teen Gohan JUS"
+displayname ="Teen Gohan"
+versiondate =31/05/2017
+mugenversion =1.0
+author ="Gohvu"
+pal.defaults =1
+
+[Files]
+sprite =Teen Gohan.sff
+anim =Teen Gohan.air
+sound =Teen Gohan.snd
+cmd =Teen Gohan.cmd
+cns =Teen Gohan.cns
+stcommon =common1.cns
+st =Teen Gohan.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

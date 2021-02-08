@@ -1,0 +1,26 @@
+
+A - Light Punch
+
+B - Hard Punch
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Gigantic Claw
+
+D,DB,B,a - Eraser Blow
+
+D,DF,F,b - Lariat Express
+
+D,DB,B,b - Powered Shell
+
+D,DF,F,c - Eraser Cannon
+
+D,DB,B,c - Blaster Meteor
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b/b+c - Gigantic Meteror

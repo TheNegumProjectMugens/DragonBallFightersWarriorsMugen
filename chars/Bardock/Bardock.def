@@ -1,0 +1,24 @@
+[Info]
+name ="Bardock"
+displayname ="Bardock"
+versiondate =12/12/2017
+mugenversion =1.0
+author ="InSeph"
+pal.defaults =1
+
+[Files]
+sprite =Bardock.sff
+anim =Bardock.air
+sound =Bardock.snd
+cmd =Bardock.cmd
+cns =Bardock.cns
+stcommon =common1.cns
+st =Bardock.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

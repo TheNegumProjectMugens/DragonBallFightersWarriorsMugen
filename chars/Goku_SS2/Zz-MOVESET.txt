@@ -1,0 +1,26 @@
+
+A - Punch
+
+B - Kick
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Ki Liberation
+
+D,DB,B,a - Explosive Wave
+
+D,DF,F,b - Bakurikimaha
+
+D,DB,B,b - Shunkan Ido
+
+D,DF,F,c - Kamehameha
+
+D,DB,B,c - Super Energy Blast
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Super Kamehameha

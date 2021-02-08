@@ -1,0 +1,98 @@
+Note: This character has more than 3 bars of power,
+but effectively has only 3.
+ If a Special or Super is used with more than 3 bars,
+the character's power will reduce to 3 bars, and then
+lose the amount of power that they normally would.
+ The only scenario where the character will not lose power
+is when using power to transform.
+
+
+A - Light Combo
+
+B - Heavy Combo
+
+C - Ki Blast
+
+S - Power Charge
+
+FORMS:
+(note: hold the combination of buttons listed when
+selecting the character to start the match in that form)
+
+a - Base form
+
+S+a - Golden Frieza
+
+COMBOS:
+
+Base Form:
+
+a,a,a,a - Light
+
+b,b,b - Heavy
+
+a,a,b - Air
+
+a,a,a,a,b,b,b,a,a,b - Full
+
+Golden Form:
+
+a,a,a,a,a - Light
+
+b,b,b,b,b - Heavy
+
+a,a,a,a,a,b - Air
+
+a,a,a,a,a,b,b,b,b,b,a,a,a,a,a,b - Full
+
+SPECIALS:
+
+Base Form:
+
+D,DF,F,a - Death Beam
+
+D,DB,B,a - Death Storm
+
+D,DF,F,b - Death Slicer
+
+D,DB,B,b - Nova Strike
+
+D,DF,F,c - Last Emperor
+
+D,DB,B,c - Chonoryoku
+
+D+a - Golden Frieza
+
+D+b - Death Psycho Bomb
+
+D+c - 100% Full Power
+
+Golden Frieza
+
+D,DF,F,a - Ricochet Death Beam
+
+D,DB,B,a - Death Storm
+
+D,DF,F,b - Triple Death Slicer
+
+D,DB,B,b - Nova Oppression
+
+D,DF,F,c - Emperor's Death Beam
+
+D,DB,B,c - Emperor's Edge
+
+D+b - Death Psycho Bomb
+
+D+c - Emperor's Wrath
+
+D+S - Base Form
+
+SUPER: 
+
+Base Form:
+
+x - Death Ball
+
+Golden Frieza:
+
+x - Supernova

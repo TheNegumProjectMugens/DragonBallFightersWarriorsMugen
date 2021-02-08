@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Bardock SSJ"
+displayname ="Bardock SSJ"
+versiondate =00/00/2017
+mugenversion =1.0
+author ="Mikel8888 by Santoryu MUGEN JUS"
+pal.defaults =1
+
+[Files]
+sprite =Bardock SSJ.sff
+anim =Bardock SSJ.air
+sound =Bardock SSJ.snd
+cmd =Bardock SSJ.cmd
+cns =Bardock SSJ.cns
+stcommon =common1.cns
+st =Bardock SSJ.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

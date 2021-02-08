@@ -1,0 +1,26 @@
+------------------------------------------
+M.U.G.E.N ver 1.10 (2012.08.31) status log
+------------------------------------------
+Parsing command line...
+Command line: C:\Users\OPERACIONAL\Videos\MUGEN HEROES\mugen.exe ffchartest ffchartest
+Parse command line OK
+Initializing...
+Allocating game variables
+Reading configuration file...
+Error detected.
+
+Can't open config file data/mugen.cfg.
+Error reading data/mugen.cfg
+
+Clipboard tail:
+------------------------------------------
+M.U.G.E.N ver 1.10 (2012.08.31) status log
+------------------------------------------
+Parsing command line...
+Command line: C:\Users\OPERACIONAL\Videos\MUGEN HEROES\mugen.exe ffchartest ffchartest
+Parse command line OK
+Initializing...
+Allocating game variables
+Reading configuration file...Exit with an error.
+
+Log file successfully closed.

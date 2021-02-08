@@ -1,0 +1,35 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Cell"
+displayname ="Cell"
+versiondate =31/04/2018
+mugenversion =1.0
+author ="Mikel8888, edited by Shiruzato/MYTHOS"
+pal.defaults =1
+
+[Files]
+sprite =Cell_Perfect_Form.sff
+anim =Cell_Perfect_Form.air
+sound =Cell_Perfect_Form.snd
+cmd =Cell_Perfect_Form.cmd
+cns =Cell_Perfect_Form.cns
+stcommon =common1.cns
+st =Cell_Perfect_Form.cns
+pal1=1.act
+pal2=1.act
+pal3=1.act
+pal4=1.act
+pal5=1.act
+pal6=1.act
+pal7=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

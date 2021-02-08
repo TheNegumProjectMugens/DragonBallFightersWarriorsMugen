@@ -1,0 +1,24 @@
+[Info]
+name ="Turles"
+displayname ="Turles"
+versiondate =25/12/2017
+mugenversion =1.0
+author ="InSeph, edited by Shiruzato"
+pal.defaults =1
+
+[Files]
+sprite =Turles.sff
+anim =Turles.air
+sound =Turles.snd
+cmd =Turles.cmd
+cns =Turles.cns
+stcommon =common1.cns
+st =Turles.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

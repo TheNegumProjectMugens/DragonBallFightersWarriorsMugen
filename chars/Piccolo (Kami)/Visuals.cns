@@ -1,0 +1,603 @@
+;===============================================================================
+;------------------------------------VISUALS------------------------------------
+;===============================================================================
+
+;-------------------------------------------------------------------------------
+; Base Hitspark1
+[Statedef 800]
+type    = A
+movetype= I
+physics = N
+anim = 7010
+sprpriority = 3
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = 1+time*.1,1+time*.1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; Base Hitspark2
+[Statedef 801]
+type    = A
+movetype= I
+physics = N
+anim = 7011
+sprpriority = 0
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = 1+time*.1,1+time*.1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; SP Hitspark A1
+[Statedef 802]
+type    = A
+movetype= I
+physics = N
+anim = 7008
+sprpriority = 3
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = 1+time*.1,1+time*.1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; SP Hitspark A2
+[Statedef 803]
+type    = A
+movetype= I
+physics = N
+anim = 7009
+sprpriority = -1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = 1+time*.1,1+time*.1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; SP Hitspark B1
+[Statedef 804]
+type    = A
+movetype= I
+physics = N
+anim = 7006
+sprpriority = 3
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = 1+time*.1,1+time*.1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; SP Hitspark B2
+[Statedef 805]
+type    = A
+movetype= I
+physics = N
+anim = 7007
+sprpriority = -1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+scale = 1+time*.1,1+time*.1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; P2 Status: Lightning
+[Statedef 810]
+type    = A
+movetype= I
+physics = N
+anim = 9999
+sprpriority = 3
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = Time = 0
+Value = Random%360
+
+[State 0, P2Status: Lightning ADD]
+type = Helper
+Trigger1 = Time = 0
+helpertype = normal
+name = "Lightning ADD"
+ID = 811
+stateno = 811
+pos = 0,0
+postype = P1
+facing = -1
+ownpal = 1
+ignorehitpause = 1
+Size.XScale = .15*Helper(999999),Fvar(16)
+Size.YScale = .15*Helper(999999),Fvar(16)
+
+[State 0, P2Status: Lightning SUB]
+type = Helper
+Trigger1 = Time = 0
+helpertype = normal
+name = "Lightning SUB"
+ID = 812
+stateno = 812
+pos = 0,-0
+postype = P1
+facing = -1
+ownpal = 1
+ignorehitpause = 1
+Size.XScale = .15*Helper(999999),Fvar(16)
+Size.YScale = .15*Helper(999999),Fvar(16)
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; P2 Lightning ADD
+[Statedef 811]
+type    = A
+movetype= I
+physics = N
+anim = 7015
+sprpriority = Cond(Random<100,0,3)
+
+[State 0, PalFX]
+type = PalFX 
+trigger1 = 1 
+time = 99999 
+add = 0,-0,-150
+mul = 500,400,500
+color = 0
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; P2 Lightning SUB
+[Statedef 812]
+type    = A
+movetype= I
+physics = N
+anim = 7015
+sprpriority = -1
+
+[State 0, PalFX]
+type = PalFX 
+trigger1 = 1 
+time = 99999 
+add = 0,-0,-0
+mul = 0,150,500
+color = 0
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = sub
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+;-------------------------------------------------------------------------------
+; PORTRAIT - Ver.1
+[Statedef 3500]
+Type    = S
+MoveType= I
+Physics = S
+Ctrl = 0
+Anim = 3500
+SprPriority = 3
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = Time = 0
+x = cond(root,facing = 1,-160,160)
+y = root,pos y - 80
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = Time = 0
+trigger2 = Time = 45
+x = Cond(Time <=39,15,10)
+[State 0, VelAdd]
+type = VelAdd
+TriggerAll = Vel X > 0
+trigger1 = Time >= 1 && Time <= 39
+trigger2 = Time >= 45
+x = -.25
+[State 0, VelSet]
+type = VelSet
+TriggerAll = Time = 15
+Trigger1 = 1
+x = 0
+
+[State 0, AngleVarAdd]
+type = VarAdd
+trigger1 = Time >= 0
+fv = 6
+value = .05
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = 0
+scale = .35*Helper(999999),Fvar(16),.35*Helper(999999),Fvar(16)
+ignorehitpause = 1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+fv = 7
+value = 0
+
+[State 0, VarAdd]
+type = VarAdd
+triggerall = fvar(7) < 256
+trigger1 = time >= 45
+fv = 8
+value = 45 ;25
+
+[State 0, Trans]
+type = Trans
+trigger1 = time >= 45
+trans = addalpha
+alpha = 256-fvar(8),256
+
+[State 200, End]
+type = Destroyself
+trigger1 = Time >= 55
+
+
+;-------------------------------------------------------------------------------
+; PORTRAIT - Ver.2 OG
+[Statedef 3600]
+Type    = S
+MoveType= I
+Physics = S
+Anim = 9999
+SprPriority = 3
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, Portrait]
+type = Explod
+trigger1 = 1
+anim = 3500
+ID = 3500
+pos = 50,115
+postype = Back
+bindtime = 0
+removetime = -2
+scale = .6,.6
+sprpriority = -9
+ontop = 1
+ownpal = 1
+vel = fvar(9),0
+supermovetime = 999999
+pausemovetime = 999999
+
+[State 0, ModifyExplod]
+type = ModifyExplod
+trigger1 = Time >= 45
+anim = 3500
+ID = 3500
+pos = 50,115
+postype = Back
+bindtime = 0
+removetime = -2
+scale = .6,.6
+sprpriority = -9
+ontop = 0
+ownpal = 1
+vel = fvar(9),0
+Trans = AddAlpha
+Alpha = 256-fvar(8),0+fvar(8)
+supermovetime = 999999
+pausemovetime = 999999
+
+;[State 0, BACK]
+;type = Explod
+;trigger1 = 1
+;anim = 3500
+;ID = 3500
+;pos = 50,125
+;postype = back
+;bindtime = -1
+;removetime = -2
+;scale = .6,.6
+;sprpriority = -9
+;ontop = 0
+;ownpal = 1
+;Trans = AddAlpha
+;Alpha = 256-fvar(8),0+fvar(8)
+;Vel = 0,0
+;supermovetime = 999999
+;pausemovetime = 999999
+
+[State 0, TransVarAdd]
+type = VarAdd
+trigger1 = time >= 45
+fv = 8
+value = 45
+[State 0, Trans]
+type = Trans
+trigger1 = time >= 45
+trans = addalpha
+alpha = 256-fvar(8),256
+
+[State 0, VelVarSet]
+type = VarSet
+trigger1 = Time = 0
+fv = 9
+value = Cond(Time <=15,15,Cond(Time>=40,10,0))
+
+[State 200, End]
+type = Destroyself
+trigger1 = Time >= 55
+
+
+
+;-----------------------------------------------------------------------
+; SUPER - Speedline
+[Statedef 3505]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+ctrl = 0
+anim = 9999
+sprpriority = -1
+
+[State 0, Speedline1]
+type = Explod
+trigger1 = time = 0
+anim = 7420
+ID = 7410
+pos = 160,100
+postype = back
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -1
+scale = .8,.8
+sprpriority = -1
+ontop = 1
+ownpal = 1
+removeongethit = 1
+trans = add
+supermovetime = 999
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = (root,stateno != [1500,1505]) && root,stateno != [1550,1570]
+id = 7410
+
+;[State 200, End]
+;type = Destroyself
+;trigger1 = time = 100
+
+[State 200, End]
+type = Destroyself
+trigger1 = (root,stateno != [1500,1505]) && root,stateno != [1550,1570]
+;-------------------------------------------------------------------------------
+; Dark Screen - Start
+[Statedef 3510]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 9999
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 5
+value = -100
+
+[State 0, BGPalFX]
+type = BGPalFX
+trigger1 = 1
+time = 1
+add = var(5),var(5),var(5)
+
+[State 200, End]
+type = ChangeState
+trigger1 = root,stateno != 1500 && root,stateno != 1505 && root,stateno != [1550,1570]
+trigger1 = root,stateno != [3000,3005]
+value = 3511
+
+;-------------------------------------------------------------------------------
+; Dark Screen - End
+[Statedef 3511]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+
+[State 0, VarAdd]
+type = VarAdd
+trigger1 = 1
+v = 5
+value = 10
+
+[State 0, BGPalFX]
+type = BGPalFX
+trigger1 = 1
+time = 1
+add = var(5),var(5),var(5)
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 10
+
+;-------------------------------------------------------------------------------
+; Dark Screen B - Start
+[Statedef 3512]
+type    = A
+movetype= I
+physics = N
+juggle  = 1
+velset = 0,0
+ctrl = 0
+anim = 9999
+
+[State 0, Trans]
+type = Trans
+trigger1 = 1
+trans = add
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 5
+value = -100
+
+[State 0, BGPalFX]
+type = BGPalFX
+trigger1 = 1
+time = 1
+add = var(5),var(5),var(5)
+
+[State 200, End]
+type = ChangeState
+trigger1 = root,stateno != 1505 && root,stateno != 1510 && root,stateno != [1550,1565]
+trigger1 = root,stateno != [3000,3005]
+value = 3511
+
+;-------------------------------------------------------------------------------
+; SloMo
+[Statedef 3515]
+type    = A
+movetype= I
+physics = N
+anim = 9999
+
+[State 0, Pause]
+type = Pause
+trigger1 = time = [0,5]
+time = 2
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 10

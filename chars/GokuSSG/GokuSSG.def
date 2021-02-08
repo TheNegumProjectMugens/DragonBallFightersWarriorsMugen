@@ -1,0 +1,24 @@
+[Info]
+name ="Goku"
+displayname ="Goku SSG"
+versiondate =12/12/2017
+mugenversion =1.0
+author ="InSeph"
+pal.defaults =1
+
+[Files]
+sprite =GokuSSG.sff
+anim =GokuSSG.air
+sound =GokuSSG.snd
+cmd =GokuSSG.cmd
+cns =GokuSSG.cns
+stcommon =common1.cns
+st =GokuSSG.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

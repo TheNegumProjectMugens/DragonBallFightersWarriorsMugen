@@ -1,0 +1,24 @@
+[Info]
+name = "Gogeta SS4"
+displayname = "Gogeta SS4"
+versiondate = 31/03/2018
+mugenversion = 1.0
+author = "InSeph, edited by Shiruzato/Mythos"
+pal.defaults = 1
+
+[Files]
+sprite = GogetaSS4.sff
+anim = GogetaSS4.air
+sound = GogetaSS4.snd
+cmd = GogetaSS4.cmd
+cns = GogetaSS4.cns
+stcommon = common1.cns
+st = GogetaSS4.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

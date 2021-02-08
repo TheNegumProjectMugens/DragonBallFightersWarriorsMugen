@@ -1,0 +1,20 @@
+[Info]
+name="Yamcha"
+displayname="Yamcha"
+versiondate=18/01/2018
+mugenversion=1.0
+author="Planeptune, edited by Shiruzato/Mythos"
+pal.defaults=1
+[Files]
+sprite=Yamcha.sff
+sound=Yamcha.snd
+anim=Yamcha.air
+cmd=Yamcha.cmd
+cns=Yamcha.cns
+st=Yamcha.cns
+st1=AI.cns
+stcommon=common1.cns
+pal1=Yamcha.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

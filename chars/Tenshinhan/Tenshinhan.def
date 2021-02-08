@@ -1,0 +1,22 @@
+[Info]
+name="Tenshinhan"
+displayname="Tien"
+versiondate=31/03/2018
+mugenversion=1.0
+author="Planeptune, edited by Shiruzato/MYTHOS"
+pal.defaults=1
+[Files]
+sprite=Tenshinhan.sff
+sound=Tenshinhan.snd
+anim=Tenshinhan.air
+cmd=Tenshinhan.cmd
+cns=Tenshinhan.cns
+st=Tenshinhan.cns
+st1=Clones.cns
+st2=AI.cns
+stcommon=common1.cns
+pal1=1.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;Credits: Mattfv, keyber, Mikel8888

@@ -1,0 +1,27 @@
+Moveset
+
+A - Saber
+
+B - Punch
+
+C - Heavy Punch
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Shockwave
+
+D,DB,B,a - Flames of Retribution
+
+D,DF,F,b - Celestial Hammer
+
+D,DB,B,b - Spiral of Comdemnation
+
+D,DF,F,c - Holy Wrath
+
+D,DB,B,c - Light of Justice
+
+SUPER: 
+
+D,DF,F,D,DF,F,a+b - Divine Wrath: Purification

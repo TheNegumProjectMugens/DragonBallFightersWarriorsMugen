@@ -1,0 +1,80 @@
+
+A - Combo 1
+
+B - Combo 2
+
+C - Ki Blast
+
+S - Power Charge
+
+FORMS:
+(note: hold the combination of buttons listed when
+selecting the character to start the match in that form)
+
+a - Base Form
+
+S+a - Pure Progress
+
+COMBOS:
+
+Base Form:
+
+a,a,a,a - Combo 1
+
+b,b,b - Combo 2
+
+b,a - Air
+
+a,a,a,a,b,b,b,b,a - Full
+
+Pure Progress:
+
+a,a,a,a,a - Light
+
+b,b,b - Heavy
+
+b,a - Air
+
+a,a,a,a,a,b,b,b,b,a - Full
+
+SPECIALS:
+
+Base Form:
+
+D,DF,F,a - Time Skip/Flash Skewer
+
+D,DB,B,a - Time Skip/Back Breaker
+
+D,DF,F,b - Time Skip/Jump Spike
+
+D,DB,B,b - Time Skip/Tremor Pulse
+
+D,DF,F,c - Flash Fist Crush
+
+D,DB,B,c - Time-Dimension Storage
+
+D+a - Pure Progress
+
+Holding Back:
+
+D,DF,F,a - Time Skip/Flash Skewer
+
+D,DB,B,a - Time Skip/Back Breaker
+
+D,DF,F,b - Time Skip/Time Cage
+
+D,DB,B,b - Time Skip/Quake Pulse
+
+D,DF,F,c - Flash Fist Assassination
+
+D,DB,B,c - Time-Dimension Storage
+
+SUPER: 
+
+Base Form:
+
+x - Time Skip/Molotov
+
+Pure Progress:
+
+x - Time Skip/Sudden Death

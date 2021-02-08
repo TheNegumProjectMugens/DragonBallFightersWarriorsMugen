@@ -1,0 +1,26 @@
+
+A - Punch
+
+B - Kick
+
+C - Ki Blast
+
+S - Power Charge
+
+SPECIALS:
+
+D,DF,F,a - Energy Palm
+
+D,DB,B,a - Super Explosive Wave
+
+D,DF,F,b - Blitz Meteor
+
+D,DB,B,b - Wild Sense
+
+D,DF,F,c - Super Big Bang Attack
+
+D,DB,B,c - Super Energy Blast
+
+SUPER: 
+
+x - Final Shine Attack
